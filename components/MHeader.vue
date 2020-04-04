@@ -155,7 +155,7 @@ header {
     }
   }
   .nuxt-link-active {
-    margin-right: 0;
+    margin-right: 0.5rem;
     // transform: translateY(-15px);
     border-color: #4299e1;
     box-shadow: 0 0 14px #4299e1;
