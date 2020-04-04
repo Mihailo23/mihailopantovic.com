@@ -32,11 +32,11 @@ html {
   margin: 0;
 }
 .page-enter-active {
-  transition: opacity 0.25s ease-out;
+  transition: opacity 0.3s ease-out;
 }
 
 .page-leave-active {
-  transition: opacity 0.25s ease-in;
+  transition: opacity 0.3s ease-in;
 }
 
 .page-enter,
