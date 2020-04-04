@@ -160,9 +160,11 @@ header {
   top: 310px;
   left: var(--image-size);
   //   transform: translateX(0) translateY(calc(100% + 20px)) scale(1);
-  a:hover {
+  a:hover,
+  a:focus {
     border-color: #4299e1;
     box-shadow: 0 0 10px #4299e1;
+    outline: none;
   }
 }
 .projects {
@@ -170,8 +172,10 @@ header {
   top: 300px;
   opacity: 0;
   a {
+    outline: none;
     box-shadow: 0 0 0 #4299e1;
-    &:hover {
+    &:hover,
+    &:focus {
       border-color: #4299e1;
       box-shadow: 0 0 14px #4299e1;
     }
