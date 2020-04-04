@@ -172,7 +172,7 @@ header {
 .social {
   position: absolute;
   top: 320px;
-  left: 220px;
+  left: 200px;
   //   transform: translateX(0) translateY(calc(100% + 20px)) scale(1);
 }
 .projects {
