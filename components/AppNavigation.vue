@@ -9,12 +9,12 @@
           <nuxt-link
             exact
             to="/"
-            class="outline-none transition duration-500 p-2 border-b-2 border-transparent hover:border-blue-500 focus:border-blue-500"
+            class="outline-none transition duration-500 px-2 py-1 border-b-4 border-transparent hover:border-blue-500 focus:border-blue-500"
             >Home</nuxt-link
           >
           <nuxt-link
             to="/projects"
-            class="outline-none transition duration-500 p-2 border-b-2 border-transparent hover:border-blue-500 focus:border-blue-500"
+            class="outline-none transition duration-500 px-2 py-1 border-b-4 border-transparent hover:border-blue-500 focus:border-blue-500"
             >Projects</nuxt-link
           >
         </ul>
@@ -65,35 +65,14 @@
               </a>
             </li>
           </ul>
-          <ul key="projects" class="flex text-white items projects">
-            <li>
-              <nuxt-link
-                to="/projects/dev9t"
-                class="block text-blue-500 rounded-full bg-white border-2 border-white"
-                >D</nuxt-link
-              >
-            </li>
-            <li>
-              <nuxt-link
-                class="block text-blue-500 rounded-full bg-white border-2 border-white"
-                to="/projects/branko-pesic"
-                >O</nuxt-link
-              >
-            </li>
-            <li>
-              <nuxt-link
-                class="block text-blue-500 rounded-full bg-white border-2 border-white"
-                to="/projects/asteria-led"
-                >A</nuxt-link
-              >
-            </li>
-            <li>
-              <nuxt-link
-                class="block text-blue-500 rounded-full bg-white border-2 border-white"
-                to="/projects/asteria-adventures"
-                >S</nuxt-link
-              >
-            </li>
+          <ul
+            key="projects"
+            class="flex text-white items projects transition duration-500"
+          >
+            <ProjectBubble project="dev9t" />
+            <ProjectBubble project="asteria-led" />
+            <ProjectBubble project="asteria-adventures" />
+            <ProjectBubble project="branko-pesic" />
           </ul>
         </transition-group>
       </nav>
@@ -102,8 +81,12 @@
 </template>
 <script>
 import { mapState } from "vuex";
+import ProjectBubble from "~/components/UI/ProjectBubble.vue";
 
 export default {
+  components: {
+    ProjectBubble
+  },
   computed: {
     ...mapState(["page"]),
     onProjects() {
@@ -161,7 +144,7 @@ header {
 }
 .items,
 .list-move {
-  transition: all 1s ease;
+  transition: all 0.6s ease;
 }
 .image {
   position: absolute;
@@ -178,9 +161,16 @@ header {
 }
 .projects {
   position: absolute;
-  top: 250px;
-  left: 20px;
+  top: 300px;
   opacity: 0;
+  a {
+    box-shadow: 0 0 0 #4299e1;
+    transition: all 0.6s ease;
+  }
+  .nuxt-link-active {
+    margin-right: 0;
+    box-shadow: 0 0 14px #4299e1;
+  }
   //   transform: translateX(0) translateY(-20px);
 }
 .projects-page {
@@ -193,7 +183,8 @@ header {
     left: 20px;
   }
   .projects {
-    // opacity: 1;
+    opacity: 1;
+    transform: translateY(-70px);
   }
   @screen sm {
     .image {
@@ -221,5 +212,17 @@ header {
 }
 .nuxt-link-active {
   border-color: #4299e1;
+}
+.asteria-led {
+  background-image: url("/images/projects/asteria-led.png");
+}
+.asteria-adventures {
+  background-image: url("/images/projects/asteria-adventures.png");
+}
+.dev9t {
+  background-image: url("/images/projects/dev9t.png");
+}
+.branko-pesic {
+  background-image: url("/images/projects/branko-pesic.png");
 }
 </style>
