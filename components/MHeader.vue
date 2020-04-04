@@ -119,8 +119,11 @@ header {
 .image {
   position: absolute;
   top: 236px;
-  left: 0;
   z-index: 6;
+  left: 0.5rem;
+  @screen sm {
+    left: 0;
+  }
 }
 .social {
   position: absolute;
