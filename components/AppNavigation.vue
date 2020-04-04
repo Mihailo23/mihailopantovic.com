@@ -168,6 +168,7 @@ header {
   }
 }
 .projects {
+  visibility: hidden;
   position: absolute;
   top: 300px;
   opacity: 0;
@@ -195,6 +196,7 @@ header {
     left: 20px;
   }
   .projects {
+    visibility: visible;
     opacity: 1;
     transform: translateY(-70px);
   }
