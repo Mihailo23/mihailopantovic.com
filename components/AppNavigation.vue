@@ -27,9 +27,7 @@
             key="image"
             src="/images/MihailoPantovic.jpeg"
             alt="Mihailo Pantovic"
-            width="200"
-            height="200"
-            class="items image rounded-full border-white border-4"
+            class="items image rounded-full border-white border-4 w-32 h-32"
           />
           <ul key="social" class="flex items social">
             <li>
@@ -115,6 +113,9 @@ export default {
 };
 </script>
 <style lang="scss">
+:root {
+  --image-size: 128px;
+}
 header {
   width: 100vw;
   height: 300px;
@@ -164,15 +165,15 @@ header {
 }
 .image {
   position: absolute;
-  top: 200px;
+  top: 236px;
   left: 0;
   z-index: 6;
   //   transform: translateX(0) translateY(100px) scale(1);
 }
 .social {
   position: absolute;
-  top: 320px;
-  left: 200px;
+  top: 310px;
+  left: var(--image-size);
   //   transform: translateX(0) translateY(calc(100% + 20px)) scale(1);
 }
 .projects {
@@ -184,7 +185,8 @@ header {
 }
 .projects-page {
   .image {
-    transform: translateX(calc(100vw - 220px)) translateY(-120px);
+    transform: translateX(calc(100vw - var(--image-size) - 20px))
+      translateY(-120px);
   }
   .social {
     top: 60px;
@@ -195,7 +197,7 @@ header {
   }
   @screen sm {
     .image {
-      transform: translateX(440px);
+      transform: translateX(calc(640px - var(--image-size)));
     }
     .social {
       left: 0;
@@ -203,17 +205,17 @@ header {
   }
   @screen md {
     .image {
-      transform: translateX(568px);
+      transform: translateX(calc(768px - var(--image-size)));
     }
   }
   @screen lg {
     .image {
-      transform: translateX(824px);
+      transform: translateX(calc(1024px - var(--image-size)));
     }
   }
   @screen xl {
     .image {
-      transform: translateX(1080px) translateY(-20px);
+      transform: translateX(calc(1280px - var(--image-size))) translateY(-20px);
     }
   }
 }
