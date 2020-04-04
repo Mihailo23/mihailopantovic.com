@@ -143,7 +143,9 @@ header {
   //   background: rgba(15, 19, 20, 0.45);
 }
 .items,
-.list-move {
+.list-move,
+.social a,
+.projects a {
   transition: all 0.6s ease;
 }
 .image {
@@ -158,6 +160,10 @@ header {
   top: 310px;
   left: var(--image-size);
   //   transform: translateX(0) translateY(calc(100% + 20px)) scale(1);
+  a:hover {
+    border-color: #4299e1;
+    box-shadow: 0 0 10px #4299e1;
+  }
 }
 .projects {
   position: absolute;
@@ -165,13 +171,15 @@ header {
   opacity: 0;
   a {
     box-shadow: 0 0 0 #4299e1;
-    transition: all 0.6s ease;
+    &:hover {
+      border-color: #4299e1;
+      box-shadow: 0 0 14px #4299e1;
+    }
   }
   .nuxt-link-active {
     margin-right: 0;
     box-shadow: 0 0 14px #4299e1;
   }
-  //   transform: translateX(0) translateY(-20px);
 }
 .projects-page {
   .image {
