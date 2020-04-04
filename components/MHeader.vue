@@ -130,6 +130,9 @@ header {
   top: 310px;
   left: var(--image-size);
   //   transform: translateX(0) translateY(calc(100% + 20px)) scale(1);
+  li:last-child {
+    margin-right: 0;
+  }
   a:hover,
   a:focus {
     border-color: #4299e1;
@@ -153,6 +156,7 @@ header {
   }
   .nuxt-link-active {
     margin-right: 0;
+    // transform: translateY(-15px);
     box-shadow: 0 0 14px #4299e1;
   }
 }

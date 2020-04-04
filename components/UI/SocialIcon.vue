@@ -1,5 +1,5 @@
 <template>
-  <li>
+  <li class="mr-2">
     <a
       class="block text-blue-500 rounded-full bg-white border-2 border-white"
       target="_blank"
