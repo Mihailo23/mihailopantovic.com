@@ -20,7 +20,7 @@
       <h6 class="mt-2 font-bold text-sm">FRONT-END:</h6>
       <Tag>Vue.js</Tag>
       <Tag>jQuery</Tag>
-      <Tag>Bootstrap</Tag>,
+      <Tag>Bootstrap</Tag>
       <Tag>React</Tag>
       <Tag>TailwindCSS</Tag>
       <h6 class="mt-2 font-bold text-sm">MOBILE:</h6>

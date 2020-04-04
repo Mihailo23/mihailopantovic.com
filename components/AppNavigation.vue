@@ -53,7 +53,7 @@
               <a
                 class="block text-blue-500 rounded-full bg-white border-2 border-white"
                 target="_blank"
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/mihailo-pantovic-a790a157/"
               >
                 <svg
                   class="fill-current inline-block h-12 w-12"
