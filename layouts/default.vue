@@ -1,15 +1,15 @@
 <template>
   <div>
-    <app-navigation />
+    <m-header />
     <nuxt />
   </div>
 </template>
 <script>
-import AppNavigation from "~/components/AppNavigation.vue";
+import MHeader from "~/components/MHeader.vue";
 
 export default {
   components: {
-    AppNavigation
+    MHeader
   }
 };
 </script>

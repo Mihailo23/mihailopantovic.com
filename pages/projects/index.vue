@@ -8,45 +8,45 @@
     <div class="flex flex-wrap -mx-2">
       <div class="w-full sm:w-2/3 px-2">
         <main>
-          <Card
+          <m-card
             title="dev9t.com— website for a Belgrade festival"
             link="http://dev9t.com"
           >
-          </Card>
+          </m-card>
 
-          <Card
+          <m-card
             title="osbrankopesic.edu.rs — website for a school in Belgrade"
             link="https://osbrankopesic.edu.rs"
           >
-          </Card>
+          </m-card>
 
-          <Card
+          <m-card
             title="asteria-led.com — website for Croatian LED company"
             link="http://asteria-led.com"
           >
-          </Card>
+          </m-card>
 
-          <Card
+          <m-card
             title="asteria-adventures.com — website for Croatian ATV company"
             link="http://asteria-adventures.com"
           >
-          </Card>
+          </m-card>
         </main>
       </div>
       <div class="w-full sm:w-1/3 px-2">
-        <Sidebar />
+        <m-sidebar />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Sidebar from "~/components/Sidebar.vue";
-import Card from "~/components/UI/Card.vue";
+import MSidebar from "~/components/MSidebar.vue";
+import MCard from "~/components/UI/MCard.vue";
 export default {
   components: {
-    Sidebar,
-    Card
+    MSidebar,
+    MCard
   }
 };
 </script>

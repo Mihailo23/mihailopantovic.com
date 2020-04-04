@@ -8,7 +8,7 @@
         </h1>
         <h2>Front-End Developer</h2>
       </div>
-      <Address />
+      <m-address />
     </div>
     <div class="flex flex-wrap -mx-2">
       <div class="w-full sm:w-2/3 px-2">
@@ -18,15 +18,15 @@
             EXPERIENCE
           </h3>
 
-          <Card
+          <m-card
             title="Helbiz - Lead Front-End Web Developer"
             link="https://helbiz.com"
             date="OCTOBER 2019 - PRESENT"
           >
             <p class="text-sm">Micromobility Startup</p>
-          </Card>
+          </m-card>
 
-          <Card
+          <m-card
             title="YAMBA S.a.r.l., Luxembourg — Lead Front-End Web Developer"
             link="https://yamba.com"
             date="DECEMBER 2016 - OCTOBER 2019"
@@ -34,8 +34,8 @@
             <p class="text-sm">
               Social Network Startup
             </p>
-          </Card>
-          <Card
+          </m-card>
+          <m-card
             title="Presta D.O.O., Belgrade— Front-End Web Developer"
             link="https://wearepresta.com"
             date="SEPTEMBER 2013 - DECEMBER 2016"
@@ -44,13 +44,13 @@
               Working in a big team (15 people), with lots of projects, mostly
               front-endand wordpress integration
             </p>
-          </Card>
+          </m-card>
           <hr class="my-4" />
           <h3 class="text-blue-500 text-2xl font-bold leading-none">
             EDUCATION
           </h3>
           <div class="card my-8">
-            <Card
+            <m-card
               title="Faculty of Organizational Sciences, Belgrade — BSC Computer Science"
               date="OCTOBER 2007 - JUNE 2013"
             />
@@ -58,21 +58,21 @@
         </main>
       </div>
       <div class="w-full sm:w-1/3 px-2">
-        <Sidebar />
+        <m-sidebar />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Sidebar from "~/components/Sidebar.vue";
-import Card from "~/components/UI/Card.vue";
-import Address from "~/components/UI/Address.vue";
+import MSidebar from "~/components/MSidebar.vue";
+import MCard from "~/components/UI/MCard.vue";
+import MAddress from "~/components/UI/MAddress.vue";
 export default {
   components: {
-    Sidebar,
-    Card,
-    Address
+    MSidebar,
+    MCard,
+    MAddress
   }
 };
 </script>

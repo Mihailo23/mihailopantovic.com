@@ -3,52 +3,52 @@
     <div class="card my-8">
       <hr class="my-4" />
       <h5 class="text-blue-500 font-bold">SKILLS</h5>
-      <Tag>JavaScript</Tag>
-      <Tag>Sass</Tag>
-      <Tag>HTML</Tag>
-      <Tag>CSS</Tag>
-      <Tag>PHP</Tag>
-      <Tag>MySQL</Tag>
-      <Tag>Mongo</Tag>
+      <MTag>JavaScript</MTag>
+      <MTag>Sass</MTag>
+      <MTag>HTML</MTag>
+      <MTag>CSS</MTag>
+      <MTag>PHP</MTag>
+      <MTag>MySQL</MTag>
+      <MTag>Mongo</MTag>
     </div>
     <div class="card my-8">
       <hr class="my-4" />
       <h5 class="text-blue-500 font-bold">FRAMEWORKS</h5>
       <h6 class="mt-2 font-bold text-sm">PHP:</h6>
-      <Tag>Wordpress</Tag>
-      <Tag>Laravel</Tag>
+      <MTag>Wordpress</MTag>
+      <MTag>Laravel</MTag>
       <h6 class="mt-2 font-bold text-sm">FRONT-END:</h6>
-      <Tag>Vue.js</Tag>
-      <Tag>jQuery</Tag>
-      <Tag>Bootstrap</Tag>
-      <Tag>React</Tag>
-      <Tag>TailwindCSS</Tag>
+      <MTag>Vue.js</MTag>
+      <MTag>jQuery</MTag>
+      <MTag>Bootstrap</MTag>
+      <MTag>React</MTag>
+      <MTag>TailwindCSS</MTag>
       <h6 class="mt-2 font-bold text-sm">MOBILE:</h6>
-      <Tag>React Native</Tag>
+      <MTag>React Native</MTag>
     </div>
     <div class="card my-8">
       <hr class="my-4" />
       <h5 class="text-blue-500 font-bold">OTHER</h5>
       <h6 class="mt-2 font-bold text-sm">Version Control:</h6>
-      <Tag>Git</Tag>
+      <MTag>Git</MTag>
       <h6 class="mt-2 font-bold text-sm">IDE Tools:</h6>
-      <Tag>Visual Studio Code</Tag>
-      <Tag>PHPStorm</Tag>
-      <Tag>Sublime Text</Tag>
-      <Tag>Adobe Photoshop Platforms</Tag>
+      <MTag>Visual Studio Code</MTag>
+      <MTag>PHPStorm</MTag>
+      <MTag>Sublime Text</MTag>
+      <MTag>Adobe Photoshop Platforms</MTag>
       <h6 class="mt-2 font-bold text-sm">Environments:</h6>
-      <Tag>Linux</Tag>
-      <Tag>Mac OS</Tag>
-      <Tag>Windows</Tag>
+      <MTag>Linux</MTag>
+      <MTag>Mac OS</MTag>
+      <MTag>Windows</MTag>
     </div>
   </aside>
 </template>
 
 <script>
-import Tag from "~/components/UI/Tag.vue";
+import MTag from "~/components/UI/MTag.vue";
 export default {
   components: {
-    Tag
+    MTag
   }
 };
 </script>
