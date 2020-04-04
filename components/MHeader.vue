@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="bk-img">
-      <div class="header-img1 bg-blue-500"></div>
+      <div class="header-image bg-blue-500"></div>
     </div>
     <div class="nav-wrapper">
       <nav class="container relative px-2 sm:px-0">
@@ -82,17 +82,17 @@ header {
     bottom: 0;
     left: 0;
     background: black;
-    // background: radial-gradient(
-    //   ellipse at center,
-    //   transparent 50%,
-    //   transparent 75%,
-    //   #000000 100%
-    // );
-    // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="rgba(0, 0, 0, 0)",endColorstr="rgba(166, 0, 0, 0)",GradientType=1);
+    background: radial-gradient(
+      ellipse at center,
+      transparent 0%,
+      transparent 40%,
+      #000000 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="rgba(0, 0, 0, 0)",endColorstr="rgba(166, 0, 0, 0)",GradientType=1);
     opacity: 0.6;
   }
 }
-.header-img1 {
+.header-image {
   background: url("/images/hero.jpg") 50%;
   background-size: cover;
   position: absolute;
@@ -145,6 +145,10 @@ header {
   position: absolute;
   top: 300px;
   opacity: 0;
+  left: 0.5rem;
+  @screen sm {
+    left: 0;
+  }
   a {
     outline: none;
     box-shadow: 0 0 0 #4299e1;
@@ -166,9 +170,15 @@ header {
     transform: translateX(calc(100vw - var(--image-size) - 20px))
       translateY(-120px);
   }
+  .social,
+  .projects {
+    left: 0.5rem;
+    @screen sm {
+      left: 0;
+    }
+  }
   .social {
     top: 60px;
-    left: 20px;
   }
   .projects {
     visibility: visible;
