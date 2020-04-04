@@ -35,7 +35,7 @@
       <MTag>Visual Studio Code</MTag>
       <MTag>PHPStorm</MTag>
       <MTag>Sublime Text</MTag>
-      <MTag>Adobe Photoshop Platforms</MTag>
+      <MTag>Adobe Photoshop</MTag>
       <h6 class="mt-2 font-bold text-sm">Environments:</h6>
       <MTag>Linux</MTag>
       <MTag>Mac OS</MTag>

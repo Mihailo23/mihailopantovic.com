@@ -85,7 +85,6 @@ header {
     background: radial-gradient(
       ellipse at center,
       transparent 0%,
-      transparent 40%,
       #000000 100%
     );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="rgba(0, 0, 0, 0)",endColorstr="rgba(166, 0, 0, 0)",GradientType=1);
@@ -110,7 +109,6 @@ header {
   width: 100vw;
   position: relative;
   z-index: 1000;
-  //   background: rgba(15, 19, 20, 0.45);
 }
 .animated,
 .list-move,
@@ -123,13 +121,11 @@ header {
   top: 236px;
   left: 0;
   z-index: 6;
-  //   transform: translateX(0) translateY(100px) scale(1);
 }
 .social {
   position: absolute;
   top: 310px;
   left: var(--image-size);
-  //   transform: translateX(0) translateY(calc(100% + 20px)) scale(1);
   li:last-child {
     margin-right: 0;
   }
