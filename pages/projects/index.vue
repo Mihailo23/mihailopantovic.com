@@ -26,9 +26,10 @@
 </template>
 
 <script>
+import projects from "~/assets/projects.json";
+
 import MSidebar from "~/components/MSidebar.vue";
 import MProject from "~/components/UI/MProject.vue";
-import projects from "~/assets/projects.json";
 export default {
   components: {
     MSidebar,

@@ -5,6 +5,12 @@
         "tags": ["javascript", "vuejs", "css3", "html5", "sass"]
     },
 
+    "milica-pantovic": {
+        "title": "projects.milica-pantovic.title",
+        "url": "http://milicapantovic.com",
+        "tags": ["wordpress", "php", "jquery", "css3", "html5", "sass"]
+    },
+
     "branko-pesic": {
         "title": "projects.branko-pesic.title",
         "url": "https://osbrankopesic.edu.rs",

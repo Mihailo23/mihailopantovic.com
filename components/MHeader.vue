@@ -227,6 +227,9 @@ header {
 .dev9t {
   background-image: url("/images/projects/dev9t.png");
 }
+.milica-pantovic {
+  background-image: url("/images/projects/milica-pantovic.png");
+}
 .branko-pesic {
   background-image: url("/images/projects/branko-pesic.png");
 }
