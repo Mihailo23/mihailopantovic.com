@@ -1,5 +1,5 @@
 <template>
-  <ul class="flex text-white items-center">
+  <ul class="flex text-white items-center py-1">
     <NavigationItem to="/" exact v-text="$t('links.home')" />
     <NavigationItem to="/projects" v-text="$t('links.projects')" />
     <div class="ml-auto">
