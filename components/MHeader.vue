@@ -78,10 +78,11 @@ export default {
 <style lang="scss">
 :root {
   --image-size: 128px;
+  --social-size: 108px;
 }
 header {
   width: 100vw;
-  height: 300px;
+  height: 200px;
   position: relative;
   &:before {
     content: "";
@@ -102,16 +103,17 @@ header {
   }
 }
 .header-image {
-  background: url("/images/hero.jpg") 50%;
+  // background: url("/images/hero.jpg") 50%;
+  background: black;
   background-size: cover;
   position: absolute;
   width: 100vw;
-  height: 300px;
+  height: 200px;
 }
 .bk-img {
   position: absolute;
   width: 100vw;
-  height: 300px;
+  height: 200px;
   overflow: hidden;
   top: 0;
 }
@@ -128,7 +130,7 @@ header {
 }
 .image {
   position: absolute;
-  top: 236px;
+  top: 136px;
   z-index: 6;
   left: 0.5rem;
   @screen sm {
@@ -137,8 +139,8 @@ header {
 }
 .social {
   position: absolute;
-  top: 310px;
-  left: var(--image-size);
+  top: 210px;
+  transform: translateX(var(--image-size));
   li:last-child {
     margin-right: 0;
   }
@@ -152,7 +154,7 @@ header {
 .projects {
   visibility: hidden;
   position: absolute;
-  top: 300px;
+  top: 200px;
   opacity: 0;
   left: 0.5rem;
   @screen sm {
@@ -176,10 +178,9 @@ header {
 }
 .projects-page {
   .image {
-    transform: translateX(calc(100vw - var(--image-size) - 20px))
-      translateY(-120px);
+    transform: translateX(calc(100vw - var(--image-size) + 10px))
+      translateY(-50px) scale(0.5);
   }
-  .social,
   .projects {
     left: 0.5rem;
     @screen sm {
@@ -187,7 +188,8 @@ header {
     }
   }
   .social {
-    top: 60px;
+    transform: translateX(calc(100vw - var(--social-size) - 14px))
+      translateY(-215px) scale(0.5);
   }
   .projects {
     visibility: visible;
@@ -199,22 +201,37 @@ header {
       transform: translateX(calc(640px - var(--image-size)));
     }
     .social {
-      left: 0;
+      transform: translateX(calc(640px - var(--social-size))) translateY(-215px)
+        scale(0.5);
     }
   }
   @screen md {
     .image {
       transform: translateX(calc(768px - var(--image-size)));
     }
+    .social {
+      transform: translateX(calc(768px - var(--social-size))) translateY(-215px)
+        scale(0.5);
+    }
   }
   @screen lg {
     .image {
       transform: translateX(calc(1024px - var(--image-size)));
     }
+
+    .social {
+      transform: translateX(calc(1024px - var(--social-size)))
+        translateY(-215px) scale(0.5);
+    }
   }
   @screen xl {
     .image {
       transform: translateX(calc(1280px - var(--image-size)));
+    }
+
+    .social {
+      transform: translateX(calc(1280px - var(--social-size)))
+        translateY(-215px) scale(0.5);
     }
   }
 }
