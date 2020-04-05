@@ -40,5 +40,20 @@
     "version-control": "Version Control",
     "ide": "IDE Tools",
     "environments": "Environments"
-  }  
+  },
+  "projects": {
+    "title": "Projects",
+    "dev9t": {
+      "title": "dev9t.com— website for a Belgrade festival"
+    },
+    "branko-pesic": {
+      "title": "osbrankopesic.edu.rs — website for a school in Belgrade"
+    },
+    "asteria-led": {
+      "title": "asteria-led.com — website for Croatian LED company"
+    },
+    "asteria-adventures": {
+      "title": "asteria-adventures.com — website for Croatian ATV company"
+    }
+  }
 }

@@ -40,5 +40,20 @@
       "version-control": "Verzionisanje koda",
       "ide": "Editori",
       "environments": "Okruženja"
-    }  
+    },
+    "projects": {
+        "title": "Projekti",
+      "dev9t": {
+        "title": "dev9t.com— sajt za festival u Beogradu"
+      },
+      "branko-pesic": {
+        "title": "osbrankopesic.edu.rs — sajt za skolu u Beogradu"
+      },
+      "asteria-led": {
+        "title": "asteria-led.com — sajt za onlajn prodavnicu LED osvetljenja"
+      },
+      "asteria-adventures": {
+        "title": "asteria-adventures.com — sajt za zakazivanje tura po Hrvatskoj"
+      }
+    }
 }
