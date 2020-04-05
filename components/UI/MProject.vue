@@ -1,5 +1,5 @@
 <template>
-  <div class="card my-8">
+  <div class="card">
     <h4 class="text-xl leading-tight" v-text="title" />
     <a
       v-if="link"

@@ -3,7 +3,7 @@
     <hr class="my-4" />
     <div class="flex flex-wrap justify-between">
       <div class="my-4">
-        <h1 class="text-blue-500 text-6xl font-bold leading-none">
+        <h1 class="text-blue-500 text-4xl sm:text-5xl font-bold leading-none">
           Mihailo Pantović
         </h1>
         <h2>Front-End Developer</h2>
