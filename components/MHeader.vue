@@ -224,16 +224,6 @@ header {
         translateY(-215px) scale(0.5);
     }
   }
-  @screen xl {
-    .image {
-      transform: translateX(calc(1280px - var(--image-size)));
-    }
-
-    .social {
-      transform: translateX(calc(1280px - var(--social-size)))
-        translateY(-215px) scale(0.5);
-    }
-  }
 }
 .asteria-led {
   background-image: url("/images/projects/asteria-led.png");
