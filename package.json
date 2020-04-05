@@ -1,21 +1,24 @@
 {
   "name": "mihailopantovic",
   "version": "1.0.0",
+  "private": true,
   "description": "Mihailo Pantovic, Front-End Developer Personal Website. VueJS, JavaScript, CSS, HTML",
   "author": "Mihailo Pantovic",
-  "private": true,
   "scripts": {
-    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "dev": "nuxt",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'",
+    "start": "nuxt start"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
     "nuxt": "^2.0.0",
-    "@nuxtjs/axios": "^5.3.6"
+    "vue-i18n": "^8.0.0"
   },
   "devDependencies": {
+    "@kazupon/vue-i18n-loader": "^0.3.0",
     "@nuxtjs/eslint-config": "^2.0.0",
     "@nuxtjs/eslint-module": "^1.0.0",
     "@nuxtjs/tailwindcss": "^1.0.0",
@@ -26,6 +29,7 @@
     "eslint-plugin-prettier": "^3.1.2",
     "node-sass": "^4.13.1",
     "prettier": "^1.19.1",
-    "sass-loader": "^8.0.2"
+    "sass-loader": "^8.0.2",
+    "vue-cli-plugin-i18n": "^0.6.1"
   }
 }
