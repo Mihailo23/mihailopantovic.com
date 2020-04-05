@@ -139,11 +139,8 @@ header {
 }
 .social {
   position: absolute;
-  top: 210px;
-  transform: translateX(var(--image-size));
-  li:last-child {
-    margin-right: 0;
-  }
+  transform: translateX(calc(var(--image-size) + 1rem)) translateY(188px)
+    scale(2);
   a:hover,
   a:focus {
     border-color: #4299e1;
@@ -188,8 +185,10 @@ header {
     }
   }
   .social {
-    transform: translateX(calc(100vw - var(--social-size) - 14px))
-      translateY(-215px) scale(0.5);
+    transform: translateX(calc(100vw - var(--social-size))) translateY(-30px);
+    li:first-child {
+      margin-right: 0.5rem;
+    }
   }
   .projects {
     visibility: visible;
@@ -201,8 +200,8 @@ header {
       transform: translateX(calc(640px - var(--image-size)));
     }
     .social {
-      transform: translateX(calc(640px - var(--social-size))) translateY(-215px)
-        scale(0.5);
+      transform: translateX(calc(640px - var(--social-size) + 20px))
+        translateY(-30px);
     }
   }
   @screen md {
@@ -210,8 +209,8 @@ header {
       transform: translateX(calc(768px - var(--image-size)));
     }
     .social {
-      transform: translateX(calc(768px - var(--social-size))) translateY(-215px)
-        scale(0.5);
+      transform: translateX(calc(768px - calc(var(--social-size) - 20px)))
+        translateY(-30px);
     }
   }
   @screen lg {
@@ -220,8 +219,8 @@ header {
     }
 
     .social {
-      transform: translateX(calc(1024px - var(--social-size)))
-        translateY(-215px) scale(0.5);
+      transform: translateX(calc(1024px - calc(var(--social-size) - 20px)))
+        translateY(-30px);
     }
   }
 }
