@@ -1,13 +1,21 @@
 <template>
   <span
-    class="inline-block p-1 rounded text-xs text-white leading-none bg-blue-500"
+    class="flex items-center justify-center w-6 h-6 rounded-full leading-none"
+    :title="`${name.toUpperCase()}`"
   >
-    <slot />
+    <i :class="`devicon-${name}-plain colored`"></i>
   </span>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    name: {
+      type: String,
+      required: true
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped></style>
