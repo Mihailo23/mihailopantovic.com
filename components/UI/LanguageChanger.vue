@@ -1,16 +1,43 @@
 <template>
-  <a
-    href=""
-    title="Change Language"
-    @click.prevent="setLocale($i18n.locale === 'en' ? 'rs' : 'en')"
-    v-text="$i18n.locale"
-  ></a>
+  <div class="relative w-6 h-6">
+    <a
+      class="lang absolute outline-none uppercase font-bold z-20 w-6 h-6 bg-black text-white border-blue-500 border-2 rounded-full flex items-center justify-center"
+      :class="active && 'active'"
+      href=""
+      title="Change Language"
+      @click.prevent="active = !active"
+      v-text="$i18n.locale"
+    ></a>
+    <a
+      v-if="$i18n.locale !== 'en'"
+      class="lang absolute invisible outline-none uppercase font-bold z-10 w-6 h-6 bg-black text-white border-blue-500 border-2 rounded-full flex items-center justify-center"
+      :class="active && 'moving'"
+      href=""
+      title="EN"
+      @click.prevent="setLocale('en')"
+    >
+      en
+    </a>
+    <a
+      v-if="$i18n.locale !== 'rs'"
+      class="lang absolute invisible outline-none uppercase font-bold z-10 w-6 h-6 bg-black text-white border-blue-500 border-2 rounded-full flex items-center justify-center"
+      :class="active && 'moving'"
+      href=""
+      title="RS"
+      @click.prevent="setLocale('rs')"
+    >
+      rs
+    </a>
+  </div>
 </template>
 
 <script>
 export default {
   data() {
-    return { langs: ["rs", "en"] };
+    return {
+      langs: ["rs", "en"],
+      active: false
+    };
   },
   created() {
     const lang = localStorage.getItem("lang");
@@ -23,9 +50,28 @@ export default {
       localStorage.setItem("lang", locale);
       this.$store.commit("UPDATE_LOCALE", locale);
       this.$i18n.locale = locale;
+      setTimeout(() => {
+        this.active = false;
+      }, 300);
     }
   }
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.lang {
+  transition: all 0.6s ease;
+  font-size: 0.625rem;
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 14px #4299e1;
+  }
+}
+.active {
+  box-shadow: 0 0 14px #4299e1;
+}
+.moving {
+  visibility: visible;
+  transform: translateY(2rem);
+}
+</style>
