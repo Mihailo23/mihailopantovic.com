@@ -6,5 +6,39 @@
     "info": {
         "country": "Srbija",
         "city": "Beograd"
-    }
+    },
+    "experience": {
+      "title": "Iskustvo",
+      "helbiz": {
+        "title": "Helbiz - Lead Front-End Web Developer",
+        "duration": "OKTOBAR 2019 - DANAS",
+        "desc": "Startap - Odrzivi načini transporta na manjim razdaljinama"
+      },
+      "yamba": {
+        "title": "YAMBA S.a.r.l., Luxembourg — Lead Front-End Web Developer",
+        "duration": "DECEMBAR 2016 - OKTOBAR 2019",
+        "desc": "Startap - društvena mreža"
+      },
+      "presta": {
+        "title": "Presta D.O.O., Belgrade — Front-End Web Developer",
+        "duration": "SEPTEMBAR 2013 - DECEMBAR 2016",
+        "desc": "Agencijski rad u timu (15-ak ljudi), sa puno projekata, najviše Front-End i uvezivanje u WordPress"
+      }
+    },
+    "education": {
+        "title": "Obrazovanje",
+        "fon": {
+            "title": "Diplomirani Inzenjer, Fakultet Organizacionih Nauka, Beograd",
+            "duration": "OKTOBAR 2007 - JUN 2013"
+        }
+    },
+    "sidebar": {
+      "languages": "Programski Jezici",
+      "frameworks": "Frejmvorci :)",
+      "databases": "Baze",
+      "other": "Ostalo",
+      "version-control": "Verzionisanje koda",
+      "ide": "Editori",
+      "environments": "Okruženja"
+    }  
 }

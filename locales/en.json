@@ -6,5 +6,39 @@
   "info": {
     "country": "Serbia",
     "city": "Belgrade"
-  }
+  },
+  "experience": {
+    "title": "Experience",
+    "helbiz": {
+      "title": "Helbiz - Lead Front-End Web Developer",
+      "duration": "OCTOBER 2019 - PRESENT",
+      "desc": "Micromobility Startup"
+    },
+    "yamba": {
+      "title": "YAMBA S.a.r.l., Luxembourg — Lead Front-End Web Developer",
+      "duration": "DECEMBER 2016 - OCTOBER 2019",
+      "desc": "Social Network Startup"
+    },
+    "presta": {
+      "title": "Presta D.O.O., Belgrade— Front-End Web Developer",
+      "duration": "SEPTEMBER 2013 - DECEMBER 2016",
+      "desc": "Working in a big team (15 people), with lots of projects, mostly Front-End and WordPress integration"
+    }
+  },
+  "education": {
+    "title": "Education",
+    "fon": {
+        "title": "Faculty of Organizational Sciences, Belgrade — BSC Computer Science",
+        "duration": "OCTOBER 2007 - JUNE 2013"
+    }
+  },
+  "sidebar": {
+    "languages": "Programming Languages",
+    "frameworks": "Frameworks",
+    "databases": "Databases",
+    "other": "Other",
+    "version-control": "Version Control",
+    "ide": "IDE Tools",
+    "environments": "Environments"
+  }  
 }

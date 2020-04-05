@@ -4,7 +4,7 @@
     <div class="flex flex-wrap justify-between">
       <div class="my-4">
         <h1 class="text-blue-500 text-6xl font-bold leading-none">
-          Mihailo Pantovic
+          Mihailo Pantović
         </h1>
         <h2>Front-End Developer</h2>
       </div>
@@ -14,45 +14,41 @@
       <div class="w-full sm:w-2/3 px-2">
         <main>
           <hr class="my-4" />
-          <h3 class="text-blue-500 text-2xl font-bold leading-none">
-            EXPERIENCE
-          </h3>
-
+          <h3
+            class="text-blue-500 text-2xl font-bold uppercase leading-none"
+            v-text="$t('experience.title')"
+          />
           <m-card
-            title="Helbiz - Lead Front-End Web Developer"
+            :title="$t('experience.helbiz.title')"
             link="https://helbiz.com"
-            date="OCTOBER 2019 - PRESENT"
+            :date="$t('experience.helbiz.duration')"
           >
-            <p class="text-sm">Micromobility Startup</p>
+            <p class="text-sm" v-text="$t('experience.helbiz.desc')" />
           </m-card>
 
           <m-card
-            title="YAMBA S.a.r.l., Luxembourg — Lead Front-End Web Developer"
+            :title="$t('experience.yamba.title')"
             link="https://yamba.com"
-            date="DECEMBER 2016 - OCTOBER 2019"
+            :date="$t('experience.yamba.duration')"
           >
-            <p class="text-sm">
-              Social Network Startup
-            </p>
+            <p class="text-sm" v-text="$t('experience.yamba.desc')" />
           </m-card>
           <m-card
-            title="Presta D.O.O., Belgrade— Front-End Web Developer"
+            :title="$t('experience.presta.title')"
             link="https://wearepresta.com"
-            date="SEPTEMBER 2013 - DECEMBER 2016"
+            :date="$t('experience.presta.duration')"
           >
-            <p class="text-sm">
-              Working in a big team (15 people), with lots of projects, mostly
-              front-endand wordpress integration
-            </p>
+            <p class="text-sm" v-text="$t('experience.presta.desc')" />
           </m-card>
           <hr class="my-4" />
-          <h3 class="text-blue-500 text-2xl font-bold leading-none">
-            EDUCATION
-          </h3>
+          <h3
+            class="text-blue-500 text-2xl font-bold leading-none"
+            v-text="$t('education.title')"
+          />
           <div class="card my-8">
             <m-card
-              title="Faculty of Organizational Sciences, Belgrade — BSC Computer Science"
-              date="OCTOBER 2007 - JUNE 2013"
+              :title="$t('education.fon.title')"
+              :date="$t('education.fon.duration')"
             />
           </div>
         </main>
