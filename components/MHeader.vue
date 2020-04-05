@@ -185,7 +185,8 @@ header {
     }
   }
   .social {
-    transform: translateX(calc(100vw - var(--social-size))) translateY(-30px);
+    transform: translateX(calc(100vw - var(--social-size) + 0.25rem))
+      translateY(-30px);
     li:first-child {
       margin-right: 0.5rem;
     }
@@ -210,16 +211,6 @@ header {
     }
     .social {
       transform: translateX(calc(768px - calc(var(--social-size) - 20px)))
-        translateY(-30px);
-    }
-  }
-  @screen lg {
-    .image {
-      transform: translateX(calc(1024px - var(--image-size)));
-    }
-
-    .social {
-      transform: translateX(calc(1024px - calc(var(--social-size) - 20px)))
         translateY(-30px);
     }
   }
