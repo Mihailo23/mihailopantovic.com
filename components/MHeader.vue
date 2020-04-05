@@ -35,10 +35,11 @@
             key="projects"
             class="flex text-white animated projects transition duration-500"
           >
-            <ProjectBubble project="dev9t" />
-            <ProjectBubble project="asteria-led" />
-            <ProjectBubble project="asteria-adventures" />
-            <ProjectBubble project="branko-pesic" />
+            <ProjectBubble
+              v-for="(project, name) in projects"
+              :key="name"
+              :project="name"
+            />
           </ul>
         </transition-group>
       </nav>
@@ -47,6 +48,8 @@
 </template>
 <script>
 import { mapState } from "vuex";
+import projects from "~/assets/projects.json";
+
 import NavigationList from "~/components/navigation/NavigationList.vue";
 import ProjectBubble from "~/components/UI/ProjectBubble.vue";
 import SocialIcon from "~/components/UI/SocialIcon.vue";
@@ -57,6 +60,13 @@ export default {
     NavigationList,
     SocialIcon
   },
+
+  data() {
+    return {
+      projects
+    };
+  },
+
   computed: {
     ...mapState(["page"]),
     onProjects() {

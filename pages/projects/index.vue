@@ -10,24 +10,11 @@
       <div class="w-full sm:w-2/3 px-2">
         <main>
           <m-project
-            :title="$t('projects.dev9t.title')"
-            link="http://dev9t.com"
-            :tags="['javascript', 'vuejs', 'css3', 'html5']"
-          />
-          <m-project
-            :title="$t('projects.branko-pesic.title')"
-            link="https://osbrankopesic.edu.rs"
-            :tags="['wordpress', 'php', 'css3', 'html5', 'sass']"
-          />
-          <m-project
-            :title="$t('projects.asteria-led.title')"
-            link="http://asteria-led.com"
-            :tags="['wordpress', 'php', 'css3', 'html5', 'sass']"
-          />
-          <m-project
-            :title="$t('projects.asteria-adventures.title')"
-            link="http://asteria-adventures.com"
-            :tags="['wordpress', 'php', 'css3', 'html5', 'sass']"
+            v-for="(project, name) in projects"
+            :key="name"
+            :title="$t(project.title)"
+            :link="project.url"
+            :tags="project.tags"
           />
         </main>
       </div>
@@ -41,10 +28,16 @@
 <script>
 import MSidebar from "~/components/MSidebar.vue";
 import MProject from "~/components/UI/MProject.vue";
+import projects from "~/assets/projects.json";
 export default {
   components: {
     MSidebar,
     MProject
+  },
+  data() {
+    return {
+      projects
+    };
   }
 };
 </script>

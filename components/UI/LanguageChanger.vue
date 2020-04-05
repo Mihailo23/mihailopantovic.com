@@ -12,8 +12,16 @@ export default {
   data() {
     return { langs: ["rs", "en"] };
   },
+  created() {
+    const lang = localStorage.getItem("lang");
+    if (lang) {
+      this.$store.commit("UPDATE_LOCALE", lang);
+    }
+  },
   methods: {
     setLocale(locale) {
+      localStorage.setItem("lang", locale);
+      this.$store.commit("UPDATE_LOCALE", locale);
       this.$i18n.locale = locale;
     }
   }

@@ -1,0 +1,24 @@
+{
+    "dev9t": {
+        "title": "projects.dev9t.title",
+        "url": "http://dev9t.com",
+        "tags": ["javascript", "vuejs", "css3", "html5", "sass"]
+    },
+
+    "branko-pesic": {
+        "title": "projects.branko-pesic.title",
+        "url": "https://osbrankopesic.edu.rs",
+        "tags": ["wordpress", "php", "jquery", "css3", "html5", "sass"]
+    },
+
+    "asteria-led": {
+        "title": "projects.asteria-led.title",
+        "url": "http://asteria-led.com",
+        "tags": ["wordpress", "php", "jquery", "css3", "html5", "sass"]
+    }    ,
+    "asteria-adventures": {
+        "title": "projects.asteria-adventures.title",
+        "url": "http://asteria-adventures.com",
+        "tags": ["wordpress", "php"]
+    }
+}
