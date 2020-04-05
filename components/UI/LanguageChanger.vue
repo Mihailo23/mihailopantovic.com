@@ -1,6 +1,5 @@
 <template>
   <a
-    v-if="false"
     href=""
     title="Change Language"
     @click.prevent="setLocale($i18n.locale === 'en' ? 'rs' : 'en')"

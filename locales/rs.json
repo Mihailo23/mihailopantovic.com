@@ -1,3 +1,10 @@
 {
-    "message": "CAO"
+    "links": {
+        "home": "Početna",
+        "projects": "Projekti"
+    },
+    "info": {
+        "country": "Srbija",
+        "city": "Beograd"
+    }
 }

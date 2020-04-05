@@ -1,7 +1,7 @@
 <template>
   <address class="my-4 sm:text-right">
     <p>Branka Momirova 10b</p>
-    <p>Belgrade, Serbia</p>
+    <p v-text="`${$t('info.city')}, ${$t('info.country')}`" />
     <p>
       <a href="mailto:pantovic.mihailo@gmail.com">
         pantovic.mihailo@gmail.com

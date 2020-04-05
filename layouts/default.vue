@@ -15,7 +15,7 @@ export default {
 </script>
 <style>
 html {
-  font-family: Lato;
+  font-family: Roboto;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
