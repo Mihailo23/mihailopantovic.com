@@ -1,9 +1,9 @@
 <template>
   <span
-    class="flex items-center justify-center w-6 h-6 rounded-full leading-none"
+    class="flex items-center justify-center w-10 h-10 rounded-full leading-none"
     :title="`${name.toUpperCase()}`"
   >
-    <i :class="`devicon-${name}-plain colored`"></i>
+    <i :class="`devicon-${name}-plain colored text-2xl`"></i>
   </span>
 </template>
 

@@ -79,6 +79,7 @@ export default {
   --social-height-big: 36px;
   --social-height-small: 24px;
   --image-bottom: calc(var(--header-height) - var(--image-size) / 2);
+  // TODO: check why this is not working in prod
   --image-center: calc(var(--header-height) / 2 - var(--image-size) / 2);
 }
 header {
@@ -94,7 +95,7 @@ header {
 .image {
   position: absolute;
   top: 0;
-  transform: translateY(var(--image-center));
+  transform: translateY(var(--image-bottom));
   z-index: 6;
   left: 0.5rem;
   @screen sm {
