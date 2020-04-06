@@ -11,7 +11,7 @@
           key="image"
           src="/images/MihailoPantovic.jpeg"
           alt="Mihailo Pantovic"
-          class="animated image rounded-full border-white border-4 w-32 h-32"
+          class="animated image rounded-full border-white border-4 w-24 h-24"
         />
         <ul key="social" class="flex animated social">
           <SocialIcon link="https://github.com/Mihailo23">
@@ -73,8 +73,15 @@ export default {
 <style lang="scss">
 :root {
   --header-height: 250px;
-  --image-size: 128px;
+  --image-size: 96px;
   --social-width: 56px;
+  --projects-height: 48px;
+  --social-height-big: 36px;
+  --social-height-small: 24px;
+  --image-placement-bottom: calc(var(--header-height) - var(--image-size) / 2);
+  --image-placement-center: calc(
+    var(--header-height) / 2 - var(--image-size) / 2
+  );
 }
 header {
   height: var(--header-height);
@@ -88,7 +95,8 @@ header {
 }
 .image {
   position: absolute;
-  top: 136px;
+  top: 0;
+  transform: translateY(var(--image-placement-bottom));
   z-index: 6;
   left: 0.5rem;
   @screen sm {
@@ -97,7 +105,9 @@ header {
 }
 .social {
   position: absolute;
-  transform: translateX(calc(var(--image-size))) translateY(188px);
+  top: 0;
+  transform: translateX(calc(var(--image-size) + 1rem))
+    translateY(calc(var(--header-height) - var(--social-height-big) / 3)); // it's 3, not 2 because it's <a> is scaled to 1.5
   li:not(:first-child) {
     margin-left: 1rem;
   }
@@ -113,7 +123,8 @@ header {
 .projects {
   visibility: hidden;
   position: absolute;
-  top: var(--header-height);
+  top: 0;
+  transform: translateY(var(--header-height));
   opacity: 0;
   left: 0.5rem;
   @screen sm {
@@ -137,18 +148,13 @@ header {
 }
 .projects-page {
   .image {
-    transform: translateX(calc(100vw - var(--image-size) + 10px))
-      translateY(-50px) scale(0.5);
-  }
-  .projects {
-    left: 0.5rem;
-    @screen sm {
-      left: 0;
-    }
+    // padding taken into account
+    transform: translateX(calc(100vw / 2 - var(--image-size) / 2 - 0.5rem))
+      translateY(var(--image-placement-center));
   }
   .social {
     transform: translateX(calc(100vw - var(--social-width) - 3rem))
-      translateY(-30px);
+      translateY(0.5rem);
     li:not(:first-child) {
       margin-left: 0.5rem;
     }
@@ -159,24 +165,32 @@ header {
   .projects {
     visibility: visible;
     opacity: 1;
-    transform: translateY(-70px);
+    transform: translateY(
+      calc(var(--header-height) - var(--projects-height) - 0.5rem)
+    );
+    left: 0.5rem;
+    @screen sm {
+      left: 0;
+    }
   }
   @screen sm {
     .image {
-      transform: translateX(calc(640px - var(--image-size)));
+      transform: translateX(calc(640px - var(--image-size)))
+        translateY(var(--image-placement-bottom));
     }
     .social {
       transform: translateX(calc(640px - var(--social-width) - 2rem))
-        translateY(-30px);
+        translateY(0.5rem);
     }
   }
   @screen md {
     .image {
-      transform: translateX(calc(768px - var(--image-size)));
+      transform: translateX(calc(768px - var(--image-size)))
+        translateY(var(--image-placement-bottom));
     }
     .social {
       transform: translateX(calc(768px - calc(var(--social-width) + 2rem)))
-        translateY(-30px);
+        translateY(0.5rem);
     }
   }
 }
