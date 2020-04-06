@@ -78,7 +78,7 @@ export default {
 <style lang="scss">
 :root {
   --image-size: 128px;
-  --social-size: 108px;
+  --social-size: 56px;
 }
 header {
   width: 100vw;
@@ -139,8 +139,11 @@ header {
 }
 .social {
   position: absolute;
-  transform: translateX(calc(var(--image-size) + 1rem)) translateY(188px)
-    scale(2);
+  transform: translateX(calc(var(--image-size) + 1.5rem)) translateY(188px)
+    scale(1.5);
+  li:not(:first-child) {
+    margin-left: 0.5rem;
+  }
   a:hover,
   a:focus {
     border-color: #4299e1;
@@ -185,11 +188,8 @@ header {
     }
   }
   .social {
-    transform: translateX(calc(100vw - var(--social-size) + 0.25rem))
+    transform: translateX(calc(100vw - var(--social-size) - 3rem))
       translateY(-30px);
-    li:first-child {
-      margin-right: 0.5rem;
-    }
   }
   .projects {
     visibility: visible;
@@ -201,7 +201,7 @@ header {
       transform: translateX(calc(640px - var(--image-size)));
     }
     .social {
-      transform: translateX(calc(640px - var(--social-size) + 20px))
+      transform: translateX(calc(640px - var(--social-size) - 2rem))
         translateY(-30px);
     }
   }
@@ -210,7 +210,7 @@ header {
       transform: translateX(calc(768px - var(--image-size)));
     }
     .social {
-      transform: translateX(calc(768px - calc(var(--social-size) - 20px)))
+      transform: translateX(calc(768px - calc(var(--social-size) + 2rem)))
         translateY(-30px);
     }
   }
