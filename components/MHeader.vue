@@ -78,10 +78,8 @@ export default {
   --projects-height: 48px;
   --social-height-big: 36px;
   --social-height-small: 24px;
-  --image-placement-bottom: calc(var(--header-height) - var(--image-size) / 2);
-  --image-placement-center: calc(
-    var(--header-height) / 2 - var(--image-size) / 2
-  );
+  --image-bottom: calc(var(--header-height) - var(--image-size) / 2);
+  --image-center: calc(var(--header-height) / 2 - var(--image-size) / 2);
 }
 header {
   height: var(--header-height);
@@ -96,7 +94,7 @@ header {
 .image {
   position: absolute;
   top: 0;
-  transform: translateY(var(--image-placement-bottom));
+  transform: translateY(var(--image-center));
   z-index: 6;
   left: 0.5rem;
   @screen sm {
@@ -150,7 +148,7 @@ header {
   .image {
     // padding taken into account
     transform: translateX(calc(100vw / 2 - var(--image-size) / 2 - 0.5rem))
-      translateY(var(--image-placement-center));
+      translateY(var(--image-center));
   }
   .social {
     transform: translateX(calc(100vw - var(--social-width) - 3rem))
@@ -176,7 +174,7 @@ header {
   @screen sm {
     .image {
       transform: translateX(calc(640px - var(--image-size)))
-        translateY(var(--image-placement-bottom));
+        translateY(var(--image-bottom));
     }
     .social {
       transform: translateX(calc(640px - var(--social-width) - 2rem))
@@ -186,7 +184,7 @@ header {
   @screen md {
     .image {
       transform: translateX(calc(768px - var(--image-size)))
-        translateY(var(--image-placement-bottom));
+        translateY(var(--image-bottom));
     }
     .social {
       transform: translateX(calc(768px - calc(var(--social-width) + 2rem)))
