@@ -1,7 +1,7 @@
 <template>
   <div class="container px-2 sm:px-0">
     <h1
-      class="my-4 text-blue-500 text-4xl sm:text-5xl font-bold leading-none capitalize"
+      class="my-8 text-blue-500 text-4xl sm:text-5xl font-bold leading-none capitalize"
       v-text="title"
     />
     <h2 class="text-6xl">TODO</h2>

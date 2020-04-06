@@ -148,8 +148,10 @@ header {
 .projects-page {
   .image {
     // padding taken into account
+    // TODO: chekc why you had to hardcode this translateY shit!
+    // for your stupid shitty iPhone 5S
     transform: translateX(calc(100vw / 2 - var(--image-size) / 2 - 0.5rem))
-      translateY(var(--image-center));
+      translateY(77px);
   }
   .social {
     transform: translateX(calc(100vw - var(--social-width) - 3rem))
