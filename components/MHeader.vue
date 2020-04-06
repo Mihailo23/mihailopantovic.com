@@ -139,10 +139,12 @@ header {
 }
 .social {
   position: absolute;
-  transform: translateX(calc(var(--image-size) + 1.5rem)) translateY(188px)
-    scale(1.5);
+  transform: translateX(calc(var(--image-size))) translateY(188px);
   li:not(:first-child) {
-    margin-left: 0.5rem;
+    margin-left: 1rem;
+  }
+  a {
+    transform: scale(1.5);
   }
   a:hover,
   a:focus {
@@ -189,6 +191,12 @@ header {
   .social {
     transform: translateX(calc(100vw - var(--social-size) - 3rem))
       translateY(-30px);
+    li:not(:first-child) {
+      margin-left: 0.5rem;
+    }
+    a {
+      transform: scale(1);
+    }
   }
   .projects {
     visibility: visible;
