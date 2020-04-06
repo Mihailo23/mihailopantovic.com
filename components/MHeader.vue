@@ -125,6 +125,7 @@ header {
 .animated,
 .list-move,
 .social a,
+.social li,
 .projects a {
   transition: all 0.6s ease;
 }
