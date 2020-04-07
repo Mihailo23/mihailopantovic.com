@@ -70,7 +70,7 @@ export default {
       },
       {
         name: "twitter:image",
-        content: "/images/MihailoPantovic.jpeg"
+        content: "/images/MihailoPantovic.jpg"
       }
     ],
     link: [
@@ -80,9 +80,10 @@ export default {
         href: "https://fonts.googleapis.com/css?family=Roboto&display=swap"
       },
       {
-        rel: "stylesheet",
+        rel: "preload",
         href:
-          "https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+          "https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css",
+        onLoad: "this.onload=null;this.rel='stylesheet'"
       }
     ]
   },
