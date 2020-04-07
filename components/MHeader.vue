@@ -9,7 +9,7 @@
       >
         <img
           key="image"
-          src="/images/MihailoPantovic.jpeg"
+          src="/images/MihailoPantovic.jpg"
           alt="Mihailo Pantovic"
           class="animated image rounded-full border-white border-4 w-24 h-24"
         />
