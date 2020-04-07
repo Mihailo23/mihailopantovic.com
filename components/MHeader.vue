@@ -27,10 +27,7 @@
             />
           </SocialIcon>
         </ul>
-        <ul
-          key="projects"
-          class="flex text-white animated projects transition duration-500"
-        >
+        <ul key="projects" class="flex text-white animated projects">
           <ProjectBubble
             v-for="(project, name) in projects"
             :key="name"
@@ -90,7 +87,7 @@ header {
 .social a,
 .social li,
 .projects a {
-  transition: all 0.6s ease;
+  transition: all 1s ease;
 }
 .image {
   position: absolute;
@@ -111,11 +108,10 @@ header {
     margin-left: 1rem;
   }
   a {
-    transform: scale(1.5);
+    transform: scale(1.5) rotate(0deg);
   }
   a:hover,
   a:focus {
-    border-color: #4299e1;
     outline: none;
   }
 }
@@ -130,6 +126,7 @@ header {
     left: 0;
   }
   a {
+    transform: rotate(-180deg);
     outline: none;
     box-shadow: 0 0 0 #4299e1;
     &:hover,
@@ -137,12 +134,6 @@ header {
       border-color: #4299e1;
       box-shadow: 0 0 14px #4299e1;
     }
-  }
-  .nuxt-link-active {
-    margin-right: 0.5rem;
-    // transform: translateY(-15px);
-    border-color: #4299e1;
-    box-shadow: 0 0 14px #4299e1;
   }
 }
 .projects-page {
@@ -160,7 +151,7 @@ header {
       margin-left: 0.5rem;
     }
     a {
-      transform: scale(1);
+      transform: scale(1) rotate(360deg);
     }
   }
   .projects {
@@ -172,6 +163,16 @@ header {
     left: 0.5rem;
     @screen sm {
       left: 0;
+    }
+    a {
+      transform: rotate(0deg);
+    }
+
+    a.nuxt-link-active {
+      margin-right: 0.5rem;
+      // transform: translateY(-15px);
+      border-color: #4299e1;
+      box-shadow: 0 0 14px #4299e1;
     }
   }
   @screen sm {
