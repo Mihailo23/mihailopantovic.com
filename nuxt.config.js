@@ -77,11 +77,13 @@ export default {
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
         rel: "preload",
+        as: "font",
         href: "https://fonts.googleapis.com/css?family=Roboto&display=swap",
         onLoad: "this.onload=null;this.rel='stylesheet'"
       },
       {
         rel: "preload",
+        as: "style",
         href:
           "https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css",
         onLoad: "this.onload=null;this.rel='stylesheet'"
