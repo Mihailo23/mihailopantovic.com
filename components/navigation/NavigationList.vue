@@ -1,6 +1,6 @@
 <template>
   <ul class="flex text-white items-center py-1">
-    <NavigationItem to="/" exact v-text="$t('links.home')" />
+    <NavigationItem to="/" exact class="mr-2" v-text="$t('links.home')" />
     <NavigationItem to="/projects" v-text="$t('links.projects')" />
     <div class="ml-auto">
       <LanguageChanger />
