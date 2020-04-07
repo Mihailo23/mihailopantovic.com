@@ -76,10 +76,8 @@ export default {
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
-        rel: "preload",
-        as: "font",
-        href: "https://fonts.googleapis.com/css?family=Roboto&display=swap",
-        onLoad: "this.onload=null;this.rel='stylesheet'"
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css?family=Roboto&display=swap"
       },
       {
         rel: "preload",
