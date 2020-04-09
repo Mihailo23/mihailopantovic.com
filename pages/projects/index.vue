@@ -1,7 +1,7 @@
 <template>
   <div class="container px-2 sm:px-0">
     <h1
-      class="my-8 text-blue-500 text-4xl sm:text-5xl font-bold leading-none"
+      class="my-8 text-4xl sm:text-5xl font-bold leading-none"
       v-text="$t('projects.title')"
     />
     <div class="flex flex-wrap -mx-2">

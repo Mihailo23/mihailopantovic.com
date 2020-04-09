@@ -1,7 +1,7 @@
 <template>
   <div class="relative w-6 h-6">
     <a
-      class="lang absolute outline-none uppercase font-bold z-20 w-6 h-6 bg-black text-white border-blue-500 border-2 rounded-full flex items-center justify-center"
+      class="lang absolute outline-none uppercase font-bold z-20 w-6 h-6 bg-gray-200 text-gray-800 border-black border-2 rounded-full flex items-center justify-center"
       :class="active && 'active'"
       href=""
       title="Change Language"
@@ -10,7 +10,7 @@
     ></a>
     <a
       v-if="$i18n.locale !== 'en'"
-      class="lang absolute invisible outline-none uppercase font-bold z-10 w-6 h-6 bg-black text-white border-blue-500 border-2 rounded-full flex items-center justify-center"
+      class="lang absolute invisible outline-none uppercase font-bold z-10 w-6 h-6 bg-gray-200 text-gray-800 border-black border-2 rounded-full flex items-center justify-center"
       :class="active && 'moving'"
       href=""
       title="EN"
@@ -20,7 +20,7 @@
     </a>
     <a
       v-if="$i18n.locale !== 'rs'"
-      class="lang absolute invisible outline-none uppercase font-bold z-10 w-6 h-6 bg-black text-white border-blue-500 border-2 rounded-full flex items-center justify-center"
+      class="lang absolute invisible outline-none uppercase font-bold z-10 w-6 h-6 bg-gray-200 text-gray-800 border-black border-2 rounded-full flex items-center justify-center"
       :class="active && 'moving'"
       href=""
       title="RS"
@@ -64,11 +64,11 @@ export default {
   font-size: 0.625rem;
   &:hover,
   &:focus {
-    box-shadow: 0 0 14px #4299e1;
+    box-shadow: 0 0 14px;
   }
 }
 .active {
-  box-shadow: 0 0 14px #4299e1;
+  box-shadow: 0 0 14px;
 }
 .moving {
   visibility: visible;

@@ -1,7 +1,7 @@
 <template>
   <li>
     <a
-      class="w-6 h-6 flex items-center justify-center text-blue-500 rounded-full bg-white border-2 border-white"
+      class="w-6 h-6 flex text-black bg-white items-center justify-center rounded-full bg-black"
       target="_blank"
       :href="link"
     >

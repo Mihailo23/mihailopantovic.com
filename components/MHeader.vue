@@ -1,5 +1,6 @@
 <template>
-  <header class="relative w-full bg-black">
+  <header class="relative w-full bg-gray-200">
+    <MSVG class="micko" />
     <nav class="container relative px-2 sm:px-0">
       <NavigationList />
       <transition-group
@@ -11,7 +12,7 @@
           key="image"
           src="/images/MihailoPantovic.jpg"
           alt="Mihailo Pantovic"
-          class="animated image rounded-full border-white border-4 w-24 h-24"
+          class="animated image rounded-full border-black border-4 w-24 h-24"
         />
         <ul key="social" class="flex animated social">
           <SocialIcon link="https://github.com/Mihailo23">
@@ -45,12 +46,14 @@ import projects from "~/assets/projects.json";
 import NavigationList from "~/components/navigation/NavigationList.vue";
 import ProjectBubble from "~/components/UI/ProjectBubble.vue";
 import SocialIcon from "~/components/UI/SocialIcon.vue";
+import MSVG from "~/components/MSVG.vue";
 
 export default {
   components: {
     ProjectBubble,
     NavigationList,
-    SocialIcon
+    SocialIcon,
+    MSVG
   },
 
   data() {
@@ -99,6 +102,21 @@ header {
     left: 0;
   }
 }
+.micko {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: calc(var(--header-height) - 2rem);
+  @screen sm {
+    bottom: auto;
+  }
+  @screen md {
+    top: 0;
+    height: 350px;
+    transform: translate(-50%, 0);
+  }
+}
 .social {
   position: absolute;
   top: 0;
@@ -128,11 +146,11 @@ header {
   a {
     transform: rotate(-180deg);
     outline: none;
-    box-shadow: 0 0 0 #4299e1;
+    box-shadow: 0 0 0 #000000;
     &:hover,
     &:focus {
-      border-color: #4299e1;
-      box-shadow: 0 0 14px #4299e1;
+      border-color: #000000;
+      box-shadow: 0 0 14px #000000;
     }
   }
 }
@@ -171,8 +189,8 @@ header {
     a.nuxt-link-active {
       margin-right: 0.5rem;
       // transform: translateY(-15px);
-      border-color: #4299e1;
-      box-shadow: 0 0 14px #4299e1;
+      border-color: #000000;
+      box-shadow: 0 0 14px #000000;
     }
   }
   @screen sm {
