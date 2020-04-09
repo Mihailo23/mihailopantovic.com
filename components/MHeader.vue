@@ -1,5 +1,5 @@
 <template>
-  <header class="relative w-full bg-gray-200">
+  <header class="relative w-full bg-gray-300">
     <MSVG class="micko" />
     <nav class="container relative px-2 sm:px-0">
       <NavigationList />
@@ -159,8 +159,9 @@ header {
     // padding taken into account
     // TODO: chekc why you had to hardcode this translateY shit!
     // for your stupid shitty iPhone 5S
-    transform: translateX(calc(100vw / 2 - var(--image-size) / 2 - 0.5rem))
-      translateY(77px);
+    // transform: translateX(calc(100vw / 2 - var(--image-size) / 2 - 0.5rem))
+    //   translateY(77px) rotate(0deg);
+    opacity: 0;
   }
   .social {
     transform: translateX(calc(100vw - var(--social-width) - 3rem))
@@ -195,8 +196,9 @@ header {
   }
   @screen sm {
     .image {
+      opacity: 1;
       transform: translateX(calc(640px - var(--image-size)))
-        translateY(var(--image-bottom));
+        translateY(var(--image-bottom)) rotate(360deg);
     }
     .social {
       transform: translateX(calc(640px - var(--social-width) - 2rem))
@@ -206,7 +208,7 @@ header {
   @screen md {
     .image {
       transform: translateX(calc(768px - var(--image-size)))
-        translateY(var(--image-bottom));
+        translateY(var(--image-bottom)) rotate(360deg);
     }
     .social {
       transform: translateX(calc(768px - calc(var(--social-width) + 2rem)))

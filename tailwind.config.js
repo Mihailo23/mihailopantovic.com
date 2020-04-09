@@ -12,6 +12,11 @@ module.exports = {
     screens: {
       sm: "640px",
       md: "768px"
+    },
+    extend: {
+      colors: {
+        brand: "#4DE9FF"
+      }
     }
   },
   variants: {

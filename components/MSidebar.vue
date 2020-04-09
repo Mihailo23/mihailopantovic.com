@@ -2,7 +2,7 @@
   <aside class="text-center sm:text-right">
     <div class="card">
       <hr class="my-4" />
-      <h5 class="text-blue-500 font-bold" v-text="$t('sidebar.languages')" />
+      <MH5 v-text="$t('sidebar.languages')" />
       <div class="flex justify-center sm:justify-end">
         <MTag name="javascript" />
         <MTag name="html5" />
@@ -13,7 +13,7 @@
 
     <div class="card">
       <hr class="my-4" />
-      <h5 class="text-blue-500 font-bold" v-text="$t('sidebar.databases')" />
+      <MH5 v-text="$t('sidebar.databases')" />
       <div class="flex justify-center sm:justify-end">
         <MTag name="mysql" />
         <MTag name="mongodb" />
@@ -21,7 +21,7 @@
     </div>
     <div class="card">
       <hr class="my-4" />
-      <h5 class="text-blue-500 font-bold" v-text="$t('sidebar.frameworks')" />
+      <MH5 v-text="$t('sidebar.frameworks')" />
       <h6 class="mt-2 text-sm">PHP:</h6>
       <div class="flex justify-center sm:justify-end mb-4">
         <MTag name="wordpress" />
@@ -43,7 +43,7 @@
     </div>
     <div class="card">
       <hr class="my-4" />
-      <h5 class="text-blue-500 font-bold" v-text="$t('sidebar.other')" />
+      <MH5 v-text="$t('sidebar.other')" />
       <h6 class="mt-2 text-sm" v-text="$t('sidebar.version-control')" />
       <div class="flex justify-center sm:justify-end mb-4">
         <MTag name="git" />
@@ -67,9 +67,11 @@
 
 <script>
 import MTag from "~/components/UI/MTag.vue";
+import MH5 from "~/components/UI/MH5.vue";
 export default {
   components: {
-    MTag
+    MTag,
+    MH5
   }
 };
 </script>

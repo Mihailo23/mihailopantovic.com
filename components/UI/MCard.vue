@@ -3,7 +3,7 @@
     <h4 class="text-xl leading-tight" v-text="title" />
     <a
       v-if="link"
-      class="text-blue-500"
+      class="text-brand"
       :href="link"
       target="_blank"
       rel="noopener noreferrer"

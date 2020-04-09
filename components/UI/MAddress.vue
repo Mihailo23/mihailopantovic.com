@@ -5,7 +5,7 @@
       class="text-gray-700"
       v-text="`${$t('info.city')}, ${$t('info.country')}`"
     />
-    <p class="text-blue-500">
+    <p class="text-brand">
       <a href="mailto:pantovic.mihailo@gmail.com">
         pantovic.mihailo@gmail.com
       </a>

@@ -1,9 +1,8 @@
 <template>
   <div class="container px-2 sm:px-0">
-    <h1
-      class="my-8 text-4xl sm:text-5xl font-bold leading-none"
-      v-text="$t('projects.title')"
-    />
+    <div class="my-8">
+      <MH1 v-text="$t('projects.title')" />
+    </div>
     <div class="flex flex-wrap -mx-2">
       <div class="w-full sm:w-2/3 px-2">
         <main>
@@ -28,10 +27,12 @@ import projects from "~/assets/projects.json";
 
 import MSidebar from "~/components/MSidebar.vue";
 import MProject from "~/components/UI/MProject.vue";
+import MH1 from "~/components/UI/MH1.vue";
 export default {
   components: {
     MSidebar,
-    MProject
+    MProject,
+    MH1
   },
   data() {
     return {
