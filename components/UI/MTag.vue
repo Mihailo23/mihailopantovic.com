@@ -30,6 +30,7 @@ export default {
 }
 .icon::after {
   font-family: Roboto;
+  font-weight: bold;
   display: block;
   content: attr(data-title);
   background-color: #ffffff;
@@ -44,12 +45,10 @@ export default {
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
-  transition: all 0.5s cubic-bezier(0, 0.5, 0, 1);
+  transition: all 0.5s 0.2s cubic-bezier(0, 0.5, 0, 1);
 }
 .icon:hover::after {
   opacity: 1;
-}
-.icon:hover::after {
   top: -2rem;
 }
 </style>
