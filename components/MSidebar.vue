@@ -56,7 +56,7 @@
       <h6 class="mt-2 text-sm" v-text="$t('sidebar.environments')" />
       <div class="flex justify-center sm:justify-end">
         <MTag :icon="icons.linux" />
-        <MTag :icon="icons.apple" />
+        <MTag :icon="icons.mac" />
         <MTag :icon="icons.windows" />
       </div>
     </div>
