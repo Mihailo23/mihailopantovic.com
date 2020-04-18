@@ -46,6 +46,7 @@ export default {
   transform: translateX(-50%);
   opacity: 0;
   transition: all 0.5s 0.2s cubic-bezier(0, 0.5, 0, 1);
+  white-space: nowrap;
 }
 .icon:hover::after {
   opacity: 1;
