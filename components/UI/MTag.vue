@@ -29,6 +29,7 @@ export default {
   font-weight: bold;
   display: block;
   content: attr(data-title);
+  visibility: hidden;
   background-color: #ffffff;
   border: 1px solid;
   border-radius: 0.25rem;
@@ -37,15 +38,18 @@ export default {
   font-size: 0.75rem;
   position: absolute;
   z-index: 1;
-  top: -3rem;
   left: 50%;
-  transform: translateX(-50%);
+  top: -2rem;
+  transform: translateX(-50%) translateY(-1rem);
+  transition: visibility 0s 0.5s, opacity 0.5s ease,
+    transform 0.5s cubic-bezier(0, 1, 0.5, 1);
   opacity: 0;
-  transition: all 0.5s 0.2s cubic-bezier(0, 0.5, 0, 1);
   white-space: nowrap;
 }
 .icon:hover::after {
   opacity: 1;
-  top: -2rem;
+  transform: translateX(-50%) translateY(0);
+  transition: opacity 0.2s ease, transform 0.5s cubic-bezier(0, 1, 0.5, 1);
+  visibility: visible;
 }
 </style>
