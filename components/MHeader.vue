@@ -231,4 +231,7 @@ header {
 .branko-pesic {
   background-image: url("/images/projects/branko-pesic.png");
 }
+.meridijan-sped {
+  background-image: url("/images/projects/meridijan-sped.png");
+}
 </style>

@@ -2,29 +2,34 @@
     "dev9t": {
         "title": "projects.dev9t.title",
         "url": "http://dev9t.com",
-        "tags": ["js", "vue", "css", "html", "sass"]
+        "tags": ["js", "vue", "html", "css", "sass"]
     },
 
     "milica-pantovic": {
         "title": "projects.milica-pantovic.title",
         "url": "http://milicapantovic.com",
-        "tags": ["wordpress", "php", "jquery", "css", "html", "sass"]
+        "tags": ["wordpress", "php", "jquery", "html", "css", "sass"]
     },
 
     "branko-pesic": {
         "title": "projects.branko-pesic.title",
         "url": "https://osbrankopesic.edu.rs",
-        "tags": ["wordpress", "php", "jquery", "css", "html", "sass"]
+        "tags": ["wordpress", "php", "jquery", "html", "css", "sass"]
     },
 
     "asteria-led": {
         "title": "projects.asteria-led.title",
         "url": "http://asteria-led.com",
-        "tags": ["wordpress", "php", "jquery", "css", "html", "sass"]
-    }    ,
+        "tags": ["wordpress", "php", "jquery", "html", "css", "sass"]
+    },
     "asteria-adventures": {
         "title": "projects.asteria-adventures.title",
         "url": "http://asteria-adventures.com",
         "tags": ["wordpress", "php"]
+    },
+    "meridijan-sped": {
+        "title": "projects.meridijan-sped.title",
+        "url": "http://meridijansped.com/",
+        "tags": ["wordpress", "php", "html", "css", "sass"]
     }
 }
