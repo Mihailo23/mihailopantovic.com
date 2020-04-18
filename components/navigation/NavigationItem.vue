@@ -35,9 +35,29 @@ export default {
   transition: right 0.5s cubic-bezier(0, 0.5, 0, 1);
 }
 .link:hover::after {
-  right: 0;
+  animation: anchor-underline 1.5s cubic-bezier(0, 0.5, 0, 1) infinite;
 }
 .nuxt-link-active::after {
   right: 0;
+}
+.nuxt-link-active:hover::after {
+  animation: none;
+}
+@keyframes anchor-underline {
+  0%,
+  10% {
+    left: 0;
+    right: 100%;
+  }
+  40%,
+  60% {
+    left: 0;
+    right: 0;
+  }
+  90%,
+  100% {
+    left: 100%;
+    right: 0;
+  }
 }
 </style>
