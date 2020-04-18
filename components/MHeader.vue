@@ -104,17 +104,15 @@ header {
 }
 .micko {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateY(1rem);
   height: calc(var(--header-height) - 2rem);
+  width: 100%;
   @screen sm {
     bottom: auto;
   }
   @screen md {
     top: 0;
     height: 350px;
-    transform: translate(-50%, 0);
   }
 }
 .social {
