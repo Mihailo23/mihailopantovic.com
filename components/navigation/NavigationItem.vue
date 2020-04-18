@@ -40,9 +40,6 @@ export default {
 .nuxt-link-active::after {
   right: 0;
 }
-.nuxt-link-active:hover::after {
-  animation: none;
-}
 @keyframes anchor-underline {
   0%,
   10% {
