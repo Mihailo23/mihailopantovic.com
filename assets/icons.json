@@ -1,0 +1,86 @@
+{
+    "js": {
+        "icon": "javascript",
+        "title": "JavaScript"
+    },
+    "html": {
+        "icon": "html5",
+        "title": "HTML5"
+    },
+    "php": {
+        "icon": "php",
+        "title": "PHP"
+    },
+    "css": {
+        "icon": "css3",
+        "title": "CSS3"
+    },
+    "mysql": {
+        "icon": "mysql",
+        "title": "MySQL"
+    },
+    "mongo": {
+        "icon": "mongodb",
+        "title": "MongoDB"
+    },
+    "wordpress": {
+        "icon": "wordpress",
+        "title": "WordPress"
+    },
+    "laravel": {
+        "icon": "laravel",
+        "title": "Laravel"
+    },
+    "vue": {
+        "icon": "vuejs",
+        "title": "VueJS"
+    },
+    "jquery": {
+        "icon": "jquery",
+        "title": "jQuery"
+    },
+    "bootstrap": {
+        "icon": "bootstrap",
+        "title": "Bootstrap"
+    },
+    "react": {
+        "icon": "react",
+        "title": "React"
+    },
+    "sass": {
+        "icon": "sass",
+        "title": "SASS"
+    },
+    "reactnative": {
+        "icon": "react",
+        "title": "React Native"
+    },
+    "vsc": {
+        "icon": "visualstudio",
+        "title": "VSCode"
+    },
+    "phpstorm": {
+        "icon": "phpstorm",
+        "title": "PhpStorm"
+    },
+    "photoshop": {
+        "icon": "photoshop",
+        "title": "Photoshop"
+    },
+    "git": {
+        "icon": "git",
+        "title": "Git"
+    },
+    "linux": {
+        "icon": "linux",
+        "title": "Linux"
+    },
+    "mac": {
+        "icon": "apple",
+        "title": "MacOS"
+    },
+    "windows": {
+        "icon": "windows8",
+        "title": "Windows"
+    }
+}

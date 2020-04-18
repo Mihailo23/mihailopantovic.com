@@ -10,7 +10,7 @@
       v-text="link"
     />
     <div v-if="tags.length" class="flex">
-      <MTag v-for="tag in tags" :key="tag" :name="tag" />
+      <MTag v-for="tag in tags" :key="tag" :icon="icons[tag]" />
     </div>
     <slot></slot>
   </div>
@@ -18,6 +18,7 @@
 
 <script>
 import MTag from "./MTag";
+import icons from "~/assets/icons.json";
 export default {
   components: {
     MTag
@@ -35,6 +36,11 @@ export default {
       type: Array,
       default: () => []
     }
+  },
+  data() {
+    return {
+      icons
+    };
   }
 };
 </script>

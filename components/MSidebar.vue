@@ -4,10 +4,10 @@
       <hr class="my-4" />
       <MH5 v-text="$t('sidebar.languages')" />
       <div class="flex justify-center sm:justify-end">
-        <MTag icon="javascript" title="JavaScript" />
-        <MTag icon="html5" title="HTML5" />
-        <MTag icon="php" title="PHP" />
-        <MTag icon="css3" title="CSS3" />
+        <MTag :icon="icons.js" />
+        <MTag :icon="icons.html" />
+        <MTag :icon="icons.php" />
+        <MTag :icon="icons.css" />
       </div>
     </div>
 
@@ -15,8 +15,8 @@
       <hr class="my-4" />
       <MH5 v-text="$t('sidebar.databases')" />
       <div class="flex justify-center sm:justify-end">
-        <MTag icon="mysql" title="MySQL" />
-        <MTag icon="mongodb" title="MongoDB" />
+        <MTag :icon="icons.mysql" />
+        <MTag :icon="icons.mongo" />
       </div>
     </div>
     <div class="card">
@@ -24,20 +24,20 @@
       <MH5 v-text="$t('sidebar.frameworks')" />
       <h6 class="mt-2 text-sm">PHP:</h6>
       <div class="flex justify-center sm:justify-end mb-4">
-        <MTag icon="wordpress" title="WordPress" />
-        <MTag icon="laravel" title="Laravel" />
+        <MTag :icon="icons.wordpress" />
+        <MTag :icon="icons.laravel" />
       </div>
       <h6 class="mt-2 text-sm">FRONT-END:</h6>
       <div class="flex justify-center sm:justify-end mb-4">
-        <MTag icon="vuejs" title="VueJS" />
-        <MTag icon="jquery" title="jQuery" />
-        <MTag icon="bootstrap" title="Bootstrap" />
-        <MTag icon="react" title="React" />
-        <MTag icon="sass" title="SASS" />
+        <MTag :icon="icons.vue" />
+        <MTag :icon="icons.jquery" />
+        <MTag :icon="icons.bootstrap" />
+        <MTag :icon="icons.react" />
+        <MTag :icon="icons.sass" />
       </div>
       <h6 class="mt-2 text-sm">MOBILE:</h6>
       <div class="flex justify-center sm:justify-end">
-        <MTag icon="react" title="React Native" />
+        <MTag :icon="icons.reactnative" />
       </div>
     </div>
     <div class="card">
@@ -45,19 +45,19 @@
       <MH5 v-text="$t('sidebar.other')" />
       <h6 class="mt-2 text-sm" v-text="$t('sidebar.version-control')" />
       <div class="flex justify-center sm:justify-end mb-4">
-        <MTag icon="git" title="Git" />
+        <MTag :icon="icons.git" />
       </div>
       <h6 class="mt-2 text-sm" v-text="$t('sidebar.ide')" />
       <div class="flex justify-center sm:justify-end mb-4">
-        <MTag icon="visualstudio" title="VSCode" />
-        <MTag icon="phpstorm" title="PhpStorm" />
-        <MTag icon="photoshop" title="Photoshop" />
+        <MTag :icon="icons.vsc" />
+        <MTag :icon="icons.phpstorm" />
+        <MTag :icon="icons.photoshop" />
       </div>
       <h6 class="mt-2 text-sm" v-text="$t('sidebar.environments')" />
       <div class="flex justify-center sm:justify-end">
-        <MTag icon="linux" title="Linux" />
-        <MTag icon="apple" title="MacOS" />
-        <MTag icon="windows8" title="Windows" />
+        <MTag :icon="icons.linux" />
+        <MTag :icon="icons.apple" />
+        <MTag :icon="icons.windows" />
       </div>
     </div>
   </aside>
@@ -66,10 +66,16 @@
 <script>
 import MTag from "~/components/UI/MTag.vue";
 import MH5 from "~/components/UI/MH5.vue";
+import icons from "~/assets/icons.json";
 export default {
   components: {
     MTag,
     MH5
+  },
+  data() {
+    return {
+      icons
+    };
   }
 };
 </script>

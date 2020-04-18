@@ -3,8 +3,8 @@
     class=" flex items-center justify-center w-10 h-10 rounded-full leading-none"
   >
     <i
-      :class="`icon devicon-${icon}-plain colored text-2xl`"
-      :data-title="title"
+      :class="`icon devicon-${icon.icon}-plain colored text-2xl`"
+      :data-title="icon.title"
     ></i>
   </span>
 </template>
@@ -13,11 +13,7 @@
 export default {
   props: {
     icon: {
-      type: String,
-      required: true
-    },
-    title: {
-      type: String,
+      type: Object,
       required: true
     }
   }
