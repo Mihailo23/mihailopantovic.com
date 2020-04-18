@@ -1,16 +1,22 @@
 <template>
   <span
-    class="flex items-center justify-center w-10 h-10 rounded-full leading-none"
-    :title="`${name.toUpperCase()}`"
+    class=" flex items-center justify-center w-10 h-10 rounded-full leading-none"
   >
-    <i :class="`devicon-${name}-plain colored text-2xl`"></i>
+    <i
+      :class="`icon devicon-${icon}-plain colored text-2xl`"
+      :data-title="title"
+    ></i>
   </span>
 </template>
 
 <script>
 export default {
   props: {
-    name: {
+    icon: {
+      type: String,
+      required: true
+    },
+    title: {
       type: String,
       required: true
     }
@@ -18,4 +24,32 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+.icon {
+  position: relative;
+}
+.icon::after {
+  font-family: Roboto;
+  display: block;
+  content: attr(data-title);
+  background-color: #ffffff;
+  border: 1px solid;
+  border-radius: 0.25rem;
+  color: inherit;
+  padding: 0.25rem;
+  font-size: 0.75rem;
+  position: absolute;
+  z-index: 1;
+  top: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0, 0.5, 0, 1);
+}
+.icon:hover::after {
+  opacity: 1;
+}
+.icon:hover::after {
+  top: -2rem;
+}
+</style>
