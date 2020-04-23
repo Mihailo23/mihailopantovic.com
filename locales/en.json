@@ -44,21 +44,28 @@
   "projects": {
     "title": "Projects",
     "dev9t": {
-      "title": "dev9t.com— website for a Belgrade festival"
+      "name": "Dev9t",
+      "title": "dev9t.com— website for a Belgrade festival",
+      "testimonial": "Mihailo is so awesome, it is unbeliveable"
     },    
     "milica-pantovic": {
+      "name": "Milica Pantovic",
       "title": "milicapantovic.com - website for my dear sister's blog WIP"
     },
     "branko-pesic": {
+      "name": "Elementary School Branko Pesic",
       "title": "osbrankopesic.edu.rs — website for a school in Belgrade"
     },
     "asteria-led": {
+      "name": "Asteria Led",
       "title": "asteria-led.com — website for a Croatian LED company"
     },
     "asteria-adventures": {
+      "name": "Asteria Adventures",
       "title": "asteria-adventures.com — website for a Croatian ATV company"
     },
     "meridijan-sped": {
+      "name": "Meridijan Sped",
       "title": "meridijan-sped.com — website for a Serbian logitics and transportation company"
     }
   }

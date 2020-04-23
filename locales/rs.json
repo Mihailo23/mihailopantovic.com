@@ -42,23 +42,31 @@
       "environments": "Okruženja"
     },
     "projects": {
-        "title": "Projekti",
+      "name": "Dev9t",  
+      "title": "Projekti",
       "dev9t": {
-        "title": "dev9t.com— sajt za festival u Beogradu"
+        "name": "Dev9t",
+        "title": "dev9t.com— sajt za festival u Beogradu",
+        "testimonial": "Mihailo je jedan veliki car i straaaaasan programer"
       },    
       "milica-pantovic": {
+        "name": "Milica Pantović",
         "title": "milicapantovic.com - sejt za blog moje drage sestre milice :) U IZRADI"
       },
       "branko-pesic": {
+        "name": "Osnovna Škola Branko Pešić",
         "title": "osbrankopesic.edu.rs — sajt za skolu u Beogradu"
       },
       "asteria-led": {
+        "name": "Asteria Led",
         "title": "asteria-led.com — sajt za onlajn prodavnicu LED osvetljenja"
       },
       "asteria-adventures": {
+        "name": "Asteria Adventures",
         "title": "asteria-adventures.com — sajt za zakazivanje tura po Hrvatskoj"
       },
       "meridijan-sped": {
+        "name": "Meridijan Šped",
         "title": "meridijan-sped.com — sajt za logističku kompaniju iz Srbije"
       }
     }
