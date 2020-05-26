@@ -15,7 +15,7 @@ export default {
 </script>
 <style>
 html {
-  font-family: Roboto;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-display: swap;
   font-size: 16px;
   word-spacing: 1px;
