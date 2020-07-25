@@ -718,7 +718,7 @@
               y2="167.6927"
               gradientTransform="matrix(1 -2.793072e-03 2.793072e-03 1 -5.7897 2.3285)"
             >
-              <stop offset="0" style="stop-color:#4DE9FF" />
+              <stop offset="0" style="stop-color:#0032c7" />
               <stop offset="1" style="stop-color:#7AFFC4" />
             </linearGradient>
             <path class="st41" d="M299.7,178.8c-1.8-4.3-7.5-19.3-7.5-19.3" />
@@ -732,7 +732,7 @@
               y2="111.1716"
               gradientTransform="matrix(1 -2.793072e-03 2.793072e-03 1 -5.7897 2.3285)"
             >
-              <stop offset="0" style="stop-color:#4DE9FF" />
+              <stop offset="0" style="stop-color:#0032c7" />
               <stop offset="1" style="stop-color:#7AFFC4" />
             </linearGradient>
             <path
@@ -749,7 +749,7 @@
               y2="166.6269"
               gradientTransform="matrix(1 -2.793072e-03 2.793072e-03 1 -5.7897 2.3285)"
             >
-              <stop offset="0" style="stop-color:#4DE9FF" />
+              <stop offset="0" style="stop-color:#0032c7" />
               <stop offset="1" style="stop-color:#7AFFC4" />
             </linearGradient>
             <path class="st43" d="M203.1,178.3c2.5-3.7,3.8-13.9,4.6-19.8" />
@@ -764,7 +764,7 @@
               gradientTransform="matrix(1 -2.793072e-03 2.793072e-03 1 -5.7897 2.3285)"
             >
               <stop offset="0" style="stop-color:#7AFFC4" />
-              <stop offset="1" style="stop-color:#4DE9FF" />
+              <stop offset="1" style="stop-color:#0032c7" />
             </linearGradient>
             <path class="st44" d="M200.8,165.2c0,0,2.7,10.4,1.4,14" />
 
@@ -777,7 +777,7 @@
               y2="168.0831"
               gradientTransform="matrix(1 -2.793072e-03 2.793072e-03 1 -5.7897 2.3285)"
             >
-              <stop offset="0" style="stop-color:#4DE9FF" />
+              <stop offset="0" style="stop-color:#0032c7" />
               <stop offset="1" style="stop-color:#7AFFC4" />
             </linearGradient>
             <path class="st45" d="M303.9,169.5" />
@@ -792,7 +792,7 @@
               gradientTransform="matrix(0.9797 0.2003 -0.2003 0.9797 97.6214 -101.8535)"
             >
               <stop offset="0" style="stop-color:#7AFFC4" />
-              <stop offset="1" style="stop-color:#4DE9FF" />
+              <stop offset="1" style="stop-color:#0032c7" />
             </linearGradient>
             <path class="st46" d="M301.2,162.7c0,0-4.2,6.9-1.9,14.8" />
 
@@ -806,7 +806,7 @@
               gradientTransform="matrix(0.9784 0.2067 -0.2067 0.9784 100.8827 -91.0385)"
             >
               <stop offset="0" style="stop-color:#7AFFC4" />
-              <stop offset="1" style="stop-color:#4DE9FF" />
+              <stop offset="1" style="stop-color:#0032c7" />
             </linearGradient>
             <path class="st47" d="M198,174.8c0,0,3,1.8,3.3,4.4" />
           </g>
@@ -820,7 +820,7 @@
             y2="258.6334"
             gradientTransform="matrix(1 -2.793072e-03 2.793072e-03 1 -5.7897 2.3285)"
           >
-            <stop offset="0" style="stop-color:#4DE9FF" />
+            <stop offset="0" style="stop-color:#0032c7" />
             <stop offset="1" style="stop-color:#7AFFC4" />
           </linearGradient>
           <path
@@ -837,7 +837,7 @@
             y2="279.3586"
             gradientTransform="matrix(1 -2.793072e-03 2.793072e-03 1 -5.7897 2.3285)"
           >
-            <stop offset="0" style="stop-color:#4DE9FF" />
+            <stop offset="0" style="stop-color:#0032c7" />
             <stop offset="1" style="stop-color:#7AFFC4" />
           </linearGradient>
           <path
@@ -869,7 +869,7 @@
             y2="209.817"
             gradientTransform="matrix(1 -2.793072e-03 2.793072e-03 1 -5.7897 2.3285)"
           >
-            <stop offset="0" style="stop-color:#4DE9FF" />
+            <stop offset="0" style="stop-color:#0032c7" />
             <stop offset="1" style="stop-color:#7AFFC4" />
           </linearGradient>
           <path
@@ -908,7 +908,7 @@
           gradientTransform="matrix(1 -2.793072e-03 2.793072e-03 1 -5.7897 2.3285)"
         >
           <stop offset="0" style="stop-color:#7AFFC4" />
-          <stop offset="1" style="stop-color:#4DE9FF" />
+          <stop offset="1" style="stop-color:#0032c7" />
         </linearGradient>
         <path class="st55" d="M343.9,271c0,0,10.9-1.7,15.3,1.8" />
 
@@ -922,7 +922,7 @@
           gradientTransform="matrix(1 -2.793072e-03 2.793072e-03 1 -5.7897 2.3285)"
         >
           <stop offset="0" style="stop-color:#7AFFC4" />
-          <stop offset="1" style="stop-color:#4DE9FF" />
+          <stop offset="1" style="stop-color:#0032c7" />
         </linearGradient>
         <path class="st56" d="M328.5,273.7c0,0,18.7-0.5,21.5,5.6" />
 
@@ -936,7 +936,7 @@
           gradientTransform="matrix(0.9453 -0.3262 0.3262 0.9453 -151.2115 188.6774)"
         >
           <stop offset="0" style="stop-color:#7AFFC4" />
-          <stop offset="1" style="stop-color:#4DE9FF" />
+          <stop offset="1" style="stop-color:#0032c7" />
         </linearGradient>
         <path class="st57" d="M189.5,291.8c2-1.7,7.3-5.2,14-14.8" />
 
@@ -950,7 +950,7 @@
           gradientTransform="matrix(0.9453 -0.3262 0.3262 0.9453 -151.2115 188.6774)"
         >
           <stop offset="0" style="stop-color:#7AFFC4" />
-          <stop offset="1" style="stop-color:#4DE9FF" />
+          <stop offset="1" style="stop-color:#0032c7" />
         </linearGradient>
         <path class="st58" d="M187.3,289.2c4.1-3.2,8.5-7.9,8.5-7.9" />
 
@@ -964,7 +964,7 @@
           gradientTransform="matrix(1 -2.793072e-03 2.793072e-03 1 -5.7897 2.3285)"
         >
           <stop offset="0" style="stop-color:#7AFFC4" />
-          <stop offset="1" style="stop-color:#4DE9FF" />
+          <stop offset="1" style="stop-color:#0032c7" />
         </linearGradient>
         <path class="st59" d="M278.8,309.5c0,0-3.9-9-3.5-14.9" />
 
@@ -978,7 +978,7 @@
           gradientTransform="matrix(1 -2.793072e-03 2.793072e-03 1 -5.7897 2.3285)"
         >
           <stop offset="0" style="stop-color:#7AFFC4" />
-          <stop offset="1" style="stop-color:#4DE9FF" />
+          <stop offset="1" style="stop-color:#0032c7" />
         </linearGradient>
         <path class="st60" d="M282,309.1c0,0-2-4-2.7-8.8" />
         <g>

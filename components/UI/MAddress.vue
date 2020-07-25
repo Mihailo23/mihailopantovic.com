@@ -10,7 +10,7 @@
         pantovic.mihailo@gmail.com
       </a>
     </p>
-    <p class="text-gray-600">
+    <p class="text-gray-700">
       <a href="tel:+381642889346">(+381) 64/2889-346</a>
     </p>
   </address>

@@ -3,6 +3,7 @@
     <a
       class="w-6 h-6 flex text-black bg-white items-center justify-center rounded-full bg-black"
       target="_blank"
+      :aria-label="title"
       :href="link"
     >
       <svg
@@ -20,6 +21,10 @@
 export default {
   props: {
     link: {
+      type: String,
+      required: true
+    },
+    title: {
       type: String,
       required: true
     }

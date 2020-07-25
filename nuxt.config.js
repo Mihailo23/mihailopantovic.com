@@ -21,6 +21,9 @@ export default {
   */
   head: {
     title: "Mihailo Pantovic - Front-End Developer",
+    htmlAttrs: {
+      lang: "en"
+    },
     meta: [
       { charset: "utf-8" },
       {

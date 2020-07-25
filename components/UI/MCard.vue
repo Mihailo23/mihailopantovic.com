@@ -9,7 +9,7 @@
       rel="noopener noreferrer"
       v-text="link"
     />
-    <p v-if="date" class="text-gray-600 text-sm" v-text="date" />
+    <p v-if="date" class="text-gray-700 text-sm" v-text="date" />
     <slot></slot>
   </div>
 </template>
