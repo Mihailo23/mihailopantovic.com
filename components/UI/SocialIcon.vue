@@ -5,6 +5,7 @@
       target="_blank"
       :aria-label="title"
       :href="link"
+      rel="noopener noreferrer"
     >
       <svg
         class="fill-current inline-block h-12 w-12"
