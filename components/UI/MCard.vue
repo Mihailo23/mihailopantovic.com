@@ -1,6 +1,6 @@
 <template>
   <div class="card my-8">
-    <h4 class="text-xl leading-tight" v-text="title" />
+    <h4 class="text-xl leading-tight text-gray-900" v-text="title" />
     <a
       v-if="link"
       class="text-brand"
