@@ -39,7 +39,7 @@ export default {
       active: false
     };
   },
-  created() {
+  mounted() {
     const lang = process.browser && localStorage.getItem("lang");
     if (lang) {
       this.$store.commit("UPDATE_LOCALE", lang);
