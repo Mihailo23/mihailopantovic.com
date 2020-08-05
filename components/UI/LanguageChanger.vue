@@ -40,14 +40,14 @@ export default {
     };
   },
   created() {
-    const lang = localStorage.getItem("lang");
+    const lang = process.browser && localStorage.getItem("lang");
     if (lang) {
       this.$store.commit("UPDATE_LOCALE", lang);
     }
   },
   methods: {
     setLocale(locale) {
-      localStorage.setItem("lang", locale);
+      process.browser && localStorage.setItem("lang", locale);
       this.$store.commit("UPDATE_LOCALE", locale);
       this.$i18n.locale = locale;
       setTimeout(() => {
