@@ -113,13 +113,6 @@ export default {
     "@nuxtjs/tailwindcss"
   ],
   /*
-   ** Nuxt.js modules
-   */
-  modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    "@nuxtjs/axios"
-  ],
-  /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
