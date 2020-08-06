@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-2 sm:px-0 pt-24">
+  <div class="container pt-24">
     <hr class="my-4" />
     <div class="flex flex-wrap justify-between">
       <div class="my-4">

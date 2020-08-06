@@ -2,10 +2,10 @@
   <nuxt-link
     :exact="exact"
     :to="to"
-    class="link outline-none transition duration-500 uppercase text-xs font-bold tracking-widest px-3 py-1"
+    class="link outline-none transition duration-500 uppercase text-xs font-bold tracking-widest px-3 py-2"
   >
-    <slot
-  /></nuxt-link>
+    <slot />
+  </nuxt-link>
 </template>
 
 <script>
@@ -34,8 +34,10 @@ export default {
   border-radius: 0.25rem;
   transition: right 0.5s cubic-bezier(0, 0.5, 0, 1);
 }
-.link:hover::after {
-  animation: anchor-underline 1.5s cubic-bezier(0, 0.5, 0, 1) infinite;
+@media (hover: hover) {
+  .link:hover::after {
+    animation: anchor-underline 1.5s cubic-bezier(0, 0.5, 0, 1) infinite;
+  }
 }
 .nuxt-link-active::after {
   right: 0;

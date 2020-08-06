@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-2 sm:px-0">
+  <div class="container">
     <h1
       class="my-8 text-brand text-4xl sm:text-5xl font-bold leading-none capitalize"
       v-text="title"

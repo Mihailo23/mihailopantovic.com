@@ -19,7 +19,7 @@ function loadLocaleMessages() {
   });
   return messages;
 }
-export default ({ app, store }) => {
+export default ({ app }) => {
   app.i18n = new VueI18n({
     locale: (process.browser && localStorage.getItem("lang")) || "en",
     fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || "en",
