@@ -1,5 +1,7 @@
 <template>
   <div>
+    <!-- TODO: this was done to prevent hydration issue --> 
+    <!-- Find out what causes this -->
     <client-only>
       <m-header />
     </client-only>
