@@ -3,9 +3,8 @@
     :exact="exact"
     :to="to"
     class="link outline-none transition duration-500 uppercase text-xs font-bold tracking-widest px-3 py-2"
-  >
-    <slot />
-  </nuxt-link>
+    v-text="text"
+  />
 </template>
 
 <script>
@@ -15,7 +14,11 @@ export default {
       type: String,
       default: "/"
     },
-    exact: Boolean
+    exact: Boolean,
+    text: {
+      type: String,
+      required: true
+    }
   }
 };
 </script>
