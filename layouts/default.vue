@@ -1,6 +1,8 @@
 <template>
   <div>
-    <m-header />
+    <client-only>
+      <m-header />
+    </client-only>
     <nuxt />
   </div>
 </template>
