@@ -3,7 +3,7 @@
     <hr class="my-4" />
     <div class="flex flex-wrap justify-between">
       <div class="my-4">
-        <MH1 v-text="'Mihailo Pantović'" />
+        <MH1 text="Mihailo Pantović" />
         <h2>Front-End Developer</h2>
       </div>
       <m-address />
@@ -12,13 +12,16 @@
       <div class="w-full sm:w-2/3 px-2">
         <main>
           <hr class="my-4" />
-          <MH3 v-text="$t('experience.title')" />
+          <MH3 :text="$t('experience.title')" />
           <m-card
             :title="$t('experience.helbiz.title')"
             link="https://helbiz.com"
             :date="$t('experience.helbiz.duration')"
           >
-            <p class="text-sm" v-text="$t('experience.helbiz.desc')" />
+            <p
+              class="text-sm"
+              v-text="$t('experience.helbiz.desc')"
+            />
           </m-card>
 
           <m-card
@@ -26,17 +29,23 @@
             link="https://yamba.com"
             :date="$t('experience.yamba.duration')"
           >
-            <p class="text-sm" v-text="$t('experience.yamba.desc')" />
+            <p
+              class="text-sm"
+              v-text="$t('experience.yamba.desc')"
+            />
           </m-card>
           <m-card
             :title="$t('experience.presta.title')"
             link="https://wearepresta.com"
             :date="$t('experience.presta.duration')"
           >
-            <p class="text-sm" v-text="$t('experience.presta.desc')" />
+            <p
+              class="text-sm"
+              v-text="$t('experience.presta.desc')"
+            />
           </m-card>
           <hr class="my-4" />
-          <MH3 v-text="$t('education.title')" />
+          <MH3 :text="$t('education.title')" />
           <div class="card my-8">
             <m-card
               :title="$t('education.fon.title')"

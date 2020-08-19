@@ -1,12 +1,16 @@
 <template>
   <div class="container px-2 sm:px-0">
     <div class="my-8">
-      <MH1 v-text="$t('projects.title')" />
+      <MH1 :text="$t('projects.title')" />
     </div>
     <div class="flex flex-wrap -mx-2">
       <div class="w-full sm:w-2/3 px-2">
         <main>
-          <div v-for="(project, name) in projects" :key="name" class="mb-8">
+          <div
+            v-for="(project, name) in projects"
+            :key="name"
+            class="mb-8"
+          >
             <m-project
               :title="$t(project.title)"
               :link="project.url"

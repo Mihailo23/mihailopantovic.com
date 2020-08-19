@@ -2,7 +2,7 @@
   <aside class="text-center sm:text-right">
     <div class="card">
       <hr class="my-4" />
-      <MH5 v-text="$t('sidebar.languages')" />
+      <MH5 :text="$t('sidebar.languages')" />
       <div class="flex justify-center sm:justify-end">
         <MTag :icon="icons.js" />
         <MTag :icon="icons.html" />
@@ -13,7 +13,7 @@
 
     <div class="card">
       <hr class="my-4" />
-      <MH5 v-text="$t('sidebar.databases')" />
+      <MH5 :text="$t('sidebar.databases')" />
       <div class="flex justify-center sm:justify-end">
         <MTag :icon="icons.mysql" />
         <MTag :icon="icons.mongo" />
@@ -21,7 +21,7 @@
     </div>
     <div class="card">
       <hr class="my-4" />
-      <MH5 v-text="$t('sidebar.frameworks')" />
+      <MH5 :text="$t('sidebar.frameworks')" />
       <h6 class="mt-2 text-sm">PHP:</h6>
       <div class="flex justify-center sm:justify-end mb-4">
         <MTag :icon="icons.wordpress" />
@@ -42,18 +42,27 @@
     </div>
     <div class="card">
       <hr class="my-4" />
-      <MH5 v-text="$t('sidebar.other')" />
-      <h6 class="mt-2 text-sm" v-text="$t('sidebar.version-control')" />
+      <MH5 :text="$t('sidebar.other')" />
+      <h6
+        class="mt-2 text-sm"
+        v-text="$t('sidebar.version-control')"
+      />
       <div class="flex justify-center sm:justify-end mb-4">
         <MTag :icon="icons.git" />
       </div>
-      <h6 class="mt-2 text-sm" v-text="$t('sidebar.ide')" />
+      <h6
+        class="mt-2 text-sm"
+        v-text="$t('sidebar.ide')"
+      />
       <div class="flex justify-center sm:justify-end mb-4">
         <MTag :icon="icons.vsc" />
         <MTag :icon="icons.phpstorm" />
         <MTag :icon="icons.photoshop" />
       </div>
-      <h6 class="mt-2 text-sm" v-text="$t('sidebar.environments')" />
+      <h6
+        class="mt-2 text-sm"
+        v-text="$t('sidebar.environments')"
+      />
       <div class="flex justify-center sm:justify-end">
         <MTag :icon="icons.linux" />
         <MTag :icon="icons.mac" />
