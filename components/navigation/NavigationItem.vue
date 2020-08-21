@@ -3,8 +3,9 @@
     :exact="exact"
     :to="to"
     class="link outline-none transition duration-500 uppercase text-xs font-bold tracking-widest px-3 py-2"
-    v-text="text"
-  />
+  >
+    {{text}}
+  </nuxt-link>
 </template>
 
 <script>

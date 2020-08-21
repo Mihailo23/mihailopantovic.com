@@ -2,11 +2,7 @@
   <header class="relative w-full bg-gray-300">
     <MSVG class="micko" />
     <nav class="container relative px-2 sm:px-0">
-      <!-- TODO: this was done to prevent hydration issue -->
-      <!-- Find out what causes this -->
-      <client-only>
-        <NavigationList />
-      </client-only>
+      <NavigationList />
       <transition-group
         name="list"
         tag="div"
