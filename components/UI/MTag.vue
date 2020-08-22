@@ -1,5 +1,9 @@
 <template>
-  <span class="flex items-center justify-center rounded-full leading-none">
+  <span
+    class="icon"
+    :data-title="icon.title"
+    :style="{backgroundColor: icon.background }"
+  >
     <component
       class="w-6 h-6"
       :is="icon.icon"
@@ -17,6 +21,7 @@ export default {
   },
   components: {
     apple: () => import('~/components/UI/icons/apple.vue'),
+    javascript: () => import('~/components/UI/icons/javascript.vue'),
   }
 };
 </script>

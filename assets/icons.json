@@ -2,106 +2,106 @@
     "js": {
         "icon": "javascript",
         "title": "JavaScript",
-        "color": "#ff0000"
+        "background": "#F7DF1E"
     },
     "html": {
         "icon": "html5",
         "title": "HTML5",
-        "color": "#ff0000"
+        "background": "#ff0000"
     },
     "php": {
         "icon": "php",
         "title": "PHP",
-        "color": "#ff0000"
+        "background": "#ff0000"
     },
     "css": {
         "icon": "css3",
         "title": "CSS3",
-        "color": "#ff0000"
+        "background": "#ff0000"
     },
     "mysql": {
         "icon": "mysql",
         "title": "MySQL",
-        "color": "#ff0000"
+        "background": "#ff0000"
     },
     "mongo": {
         "icon": "mongodb",
         "title": "MongoDB",
-        "color": "#ff0000"
+        "background": "#ff0000"
     },
     "wordpress": {
         "icon": "wordpress",
         "title": "WordPress",
-        "color": "#ff0000"
+        "background": "#ff0000"
     },
     "laravel": {
         "icon": "laravel",
         "title": "Laravel",
-        "color": "#ff0000"
+        "background": "#ff0000"
     },
     "vue": {
         "icon": "vuejs",
         "title": "VueJS",
-        "color": "#ff0000"
+        "background": "#ff0000"
     },
     "tailwind": {
         "icon": "tailwindcss",
         "title": "Tailwind CSS",
-        "color": "#ff0000"
+        "background": "#ff0000"
     },
     "jquery": {
         "icon": "jquery",
         "title": "jQuery",
-        "color": "#ff0000"
+        "background": "#ff0000"
     },
     "bootstrap": {
         "icon": "bootstrap",
         "title": "Bootstrap",
-        "color": "#ff0000"
+        "background": "#ff0000"
     },
     "react": {
         "icon": "react",
         "title": "React",
-        "color": "#ff0000"
+        "background": "#ff0000"
     },
     "sass": {
         "icon": "sass",
         "title": "SASS",
-        "color": "#ff0000"
+        "background": "#ff0000"
     },
     "reactnative": {
         "icon": "react",
         "title": "React Native",
-        "color": "#ff0000"
+        "background": "#ff0000"
     },
     "vsc": {
         "icon": "visualstudiocode",
         "title": "VSCode",
-        "color": "#ff0000"
+        "background": "#ff0000"
     },
     "photoshop": {
         "icon": "photoshop",
         "title": "Photoshop",
-        "color": "#ff0000"
+        "background": "#ff0000"
     },
     "git": {
         "icon": "git",
         "title": "Git",
-        "color": "#ff0000"
+        "background": "#ff0000"
     },
     "linux": {
         "icon": "linux",
         "title": "Linux",
-        "color": "#ff0000"
+        "background": "#ff0000"
     },
     "mac": {
         "icon": "apple",
         "title": "MacOS",
-        "color": "#ff0000"
+        "background": "transparent"
     },
     "windows": {
         "icon": "windows",
         "title": "Windows",
-        "color": "#ff0000"
+        "background": "#ff0000"
     }
 }
