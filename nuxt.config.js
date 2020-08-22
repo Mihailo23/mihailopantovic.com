@@ -59,16 +59,12 @@ export default {
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Roboto&display=swap"
-      },
-      {
+        // rel: "stylesheet",
         rel: "preload",
         as: "style",
-        href:
-          "https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css",
+        href: "https://fonts.googleapis.com/css?family=Roboto&display=swap",
         onLoad: "this.onload=null;this.rel='stylesheet'"
-      }
+      },
     ]
   },
   /*
@@ -111,6 +107,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) { }
   }
 };

@@ -71,7 +71,7 @@ export default {
   computed: {
     ...mapState(["page"]),
     onProjects() {
-      return this.page.includes("projects");
+      return this.page && this.page.includes("projects");
     }
   }
 };
