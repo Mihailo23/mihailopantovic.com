@@ -7,6 +7,7 @@
     <component
       class="w-6 h-6"
       :is="icon.icon"
+      :style="{color: icon.color }"
     />
   </span>
 </template>
