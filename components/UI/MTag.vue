@@ -1,11 +1,9 @@
 <template>
-  <span
-    class=" flex items-center justify-center w-10 h-10 rounded-full leading-none"
-  >
-    <i
-      :class="`icon devicon-${icon.icon}-plain colored text-2xl`"
-      :data-title="icon.title"
-    ></i>
+  <span class="flex items-center justify-center rounded-full leading-none">
+    <component
+      class="w-6 h-6"
+      :is="icon.icon"
+    />
   </span>
 </template>
 
@@ -16,6 +14,9 @@ export default {
       type: Object,
       required: true
     }
+  },
+  components: {
+    apple: () => import('~/components/UI/icons/apple.vue'),
   }
 };
 </script>
