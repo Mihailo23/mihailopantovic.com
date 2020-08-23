@@ -1,16 +1,28 @@
 <template>
-  <div class="card">
-    <h4 class="text-xl leading-tight" v-text="title" />
-    <a
-      v-if="link"
-      class="text-brand"
-      :href="link"
-      target="_blank"
-      rel="noopener noreferrer"
-      v-text="link"
+  <div class="space-y-2">
+    <h4
+      class="text-xl leading-tight"
+      v-text="title"
     />
-    <div v-if="tags.length" class="flex">
-      <MTag v-for="tag in tags" :key="tag" :icon="icons[tag]" />
+    <p v-if="link">
+      <a
+        class="text-brand"
+        :href="link"
+        target="_blank"
+        rel="noopener noreferrer"
+        v-text="link"
+      />
+
+    </p>
+    <div
+      v-if="tags.length"
+      class="flex space-x-3"
+    >
+      <MTag
+        v-for="tag in tags"
+        :key="tag"
+        :icon="icons[tag]"
+      />
     </div>
     <slot></slot>
   </div>

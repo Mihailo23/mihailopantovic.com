@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="text-gray-900">
     <m-header />
     <nuxt />
   </div>
