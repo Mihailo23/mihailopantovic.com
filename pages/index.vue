@@ -1,7 +1,7 @@
 <template>
   <div class="container pt-24">
     <hr class="my-4" />
-    <div class="my-4 space-y-2">
+    <div class="mt-8 mb-4 space-y-2">
       <MH1 text="Mihailo Pantović" />
       <h2 class="text-xl">Front-End Developer</h2>
       <address class="not-italic">
