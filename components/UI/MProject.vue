@@ -1,10 +1,10 @@
 <template>
   <div class="space-y-2">
-    <h4
+    <h2
       class="text-xl leading-tight"
       v-text="title"
     />
-    <p v-if="link">
+    <h3 v-if="link">
       <a
         class="text-brand"
         :href="link"
@@ -12,8 +12,7 @@
         rel="noopener noreferrer"
         v-text="link"
       />
-
-    </p>
+    </h3>
     <div
       v-if="tags.length"
       class="flex space-x-3"
