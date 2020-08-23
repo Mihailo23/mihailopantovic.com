@@ -9,109 +9,109 @@
         "icon": "html5",
         "title": "HTML5",
         "background": "transparent",
-        "color": "#999999"
+        "color": "#E34F26"
     },
     "php": {
         "icon": "php",
         "title": "PHP",
         "background": "transparent",
-        "color": "#999999"
+        "color": "#777BB4"
     },
     "css": {
         "icon": "css3",
         "title": "CSS3",
         "background": "transparent",
-        "color": "#999999"
+        "color": "#1572B6"
     },
     "mysql": {
         "icon": "mysql",
         "title": "MySQL",
         "background": "transparent",
-        "color": "#999999"
+        "color": "#4479A1"
     },
     "mongo": {
         "icon": "mongodb",
         "title": "MongoDB",
         "background": "transparent",
-        "color": "#999999"
+        "color": "#47A248"
     },
     "wordpress": {
         "icon": "wordpress",
         "title": "WordPress",
         "background": "transparent",
-        "color": "#999999"
+        "color": "#21759B"
     },
     "laravel": {
         "icon": "laravel",
         "title": "Laravel",
         "background": "transparent",
-        "color": "#999999"
+        "color": "#FF2D20"
     },
     "vue": {
         "icon": "vuejs",
         "title": "VueJS",
         "background": "transparent",
-        "color": "#999999"
+        "color": "#4FC08D"
     },
     "tailwind": {
         "icon": "tailwindcss",
         "title": "Tailwind CSS",
         "background": "transparent",
-        "color": "#999999"
+        "color": "#38B2AC"
     },
     "jquery": {
         "icon": "jquery",
         "title": "jQuery",
         "background": "transparent",
-        "color": "#999999"
+        "color": "#0769AD"
     },
     "bootstrap": {
         "icon": "bootstrap",
         "title": "Bootstrap",
         "background": "transparent",
-        "color": "#999999"
+        "color": "#563D7C"
     },
     "react": {
         "icon": "react",
         "title": "React",
         "background": "transparent",
-        "color": "#999999"
+        "color": "#61DAFB"
     },
     "sass": {
         "icon": "sass",
         "title": "SASS",
         "background": "transparent",
-        "color": "#999999"
+        "color": "#CC6699"
     },
     "reactnative": {
         "icon": "react",
         "title": "React Native",
         "background": "transparent",
-        "color": "#999999"
+        "color": "#61DAFB"
     },
     "vsc": {
         "icon": "visualstudiocode",
         "title": "VSCode",
         "background": "transparent",
-        "color": "#999999"
+        "color": "#007ACC"
     },
     "photoshop": {
         "icon": "photoshop",
         "title": "Photoshop",
         "background": "transparent",
-        "color": "#999999"
+        "color": "#31A8FF"
     },
     "git": {
         "icon": "git",
         "title": "Git",
         "background": "transparent",
-        "color": "#999999"
+        "color": "#F05032"
     },
     "linux": {
         "icon": "linux",
         "title": "Linux",
-        "background": "transparent",
-        "color": "#999999"
+        "background": "#FCC624",
+        "color": "#000000"
     },
     "mac": {
         "icon": "apple",
@@ -123,6 +123,6 @@
         "icon": "windows",
         "title": "Windows",
         "background": "transparent",
-        "color": "#999999"
+        "color": "#0078D6"
     }
 }

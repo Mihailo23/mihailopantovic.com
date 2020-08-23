@@ -1,6 +1,6 @@
 <template>
   <h5
-    class="font-bold"
+    class="font-bold tracking-wider"
     v-text="text"
   />
 </template>

@@ -22,7 +22,26 @@ export default {
   },
   components: {
     apple: () => import('~/components/UI/icons/apple.vue'),
+    bootstrap: () => import('~/components/UI/icons/bootstrap.vue'),
+    css3: () => import('~/components/UI/icons/css3.vue'),
+    git: () => import('~/components/UI/icons/git.vue'),
+    html5: () => import('~/components/UI/icons/html5.vue'),
     javascript: () => import('~/components/UI/icons/javascript.vue'),
+    jquery: () => import('~/components/UI/icons/jquery.vue'),
+    laravel: () => import('~/components/UI/icons/laravel.vue'),
+    linux: () => import('~/components/UI/icons/linux.vue'),
+    mongodb: () => import('~/components/UI/icons/mongodb.vue'),
+    mysql: () => import('~/components/UI/icons/mysql.vue'),
+    photoshop: () => import('~/components/UI/icons/photoshop.vue'),
+    php: () => import('~/components/UI/icons/php.vue'),
+    react: () => import('~/components/UI/icons/react.vue'),
+    sass: () => import('~/components/UI/icons/sass.vue'),
+    sublimetext: () => import('~/components/UI/icons/sublimetext.vue'),
+    tailwindcss: () => import('~/components/UI/icons/tailwindcss.vue'),
+    visualstudiocode: () => import('~/components/UI/icons/visualstudiocode.vue'),
+    vuejs: () => import('~/components/UI/icons/vuejs.vue'),
+    windows: () => import('~/components/UI/icons/windows.vue'),
+    wordpress: () => import('~/components/UI/icons/wordpress.vue'),
   }
 };
 </script>

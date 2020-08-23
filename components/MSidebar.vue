@@ -1,9 +1,12 @@
 <template>
-  <aside class="text-center sm:text-right">
-    <div class="card">
-      <hr class="my-4" />
-      <MH5 :text="$t('sidebar.languages')" />
-      <div class="flex justify-center sm:justify-end space-x-2">
+  <aside class="text-center sm:text-right space-y-6">
+    <hr class="my-4" />
+    <div class="border-b pb-6">
+      <MH5
+        class="mb-2"
+        :text="$t('sidebar.languages')"
+      />
+      <div class="flex justify-center sm:justify-end space-x-3">
         <MTag :icon="icons.js" />
         <MTag :icon="icons.html" />
         <MTag :icon="icons.php" />
@@ -11,24 +14,28 @@
       </div>
     </div>
 
-    <div class="card">
-      <hr class="my-4" />
-      <MH5 :text="$t('sidebar.databases')" />
-      <div class="flex justify-center sm:justify-end space-x-2">
+    <div class="border-b pb-6">
+      <MH5
+        class="mb-2"
+        :text="$t('sidebar.databases')"
+      />
+      <div class="flex justify-center sm:justify-end space-x-3">
         <MTag :icon="icons.mysql" />
         <MTag :icon="icons.mongo" />
       </div>
     </div>
-    <div class="card">
-      <hr class="my-4" />
-      <MH5 :text="$t('sidebar.frameworks')" />
-      <h6 class="mt-2 text-sm">PHP:</h6>
-      <div class="flex justify-center sm:justify-end space-x-2 mb-4">
+    <div class="border-b pb-6">
+      <MH5
+        class="mb-2"
+        :text="$t('sidebar.frameworks')"
+      />
+      <h6 class="my-2 text-sm">PHP:</h6>
+      <div class="flex justify-center sm:justify-end space-x-3 mb-4">
         <MTag :icon="icons.wordpress" />
         <MTag :icon="icons.laravel" />
       </div>
-      <h6 class="mt-2 text-sm">FRONT-END:</h6>
-      <div class="flex justify-center sm:justify-end space-x-2 mb-4">
+      <h6 class="my-2 text-sm">FRONT-END:</h6>
+      <div class="flex justify-center sm:justify-end space-x-3 mb-4">
         <MTag :icon="icons.vue" />
         <MTag :icon="icons.tailwind" />
         <MTag :icon="icons.jquery" />
@@ -36,34 +43,36 @@
         <MTag :icon="icons.react" />
         <MTag :icon="icons.sass" />
       </div>
-      <h6 class="mt-2 text-sm">MOBILE:</h6>
-      <div class="flex justify-center sm:justify-end space-x-2">
+      <h6 class="my-2 text-sm">MOBILE:</h6>
+      <div class="flex justify-center sm:justify-end space-x-3">
         <MTag :icon="icons.reactnative" />
       </div>
     </div>
-    <div class="card">
-      <hr class="my-4" />
-      <MH5 :text="$t('sidebar.other')" />
+    <div class="border-b pb-6">
+      <MH5
+        class="mb-2"
+        :text="$t('sidebar.other')"
+      />
       <h6
-        class="mt-2 text-sm"
+        class="my-2 text-sm"
         v-text="$t('sidebar.version-control')"
       />
-      <div class="flex justify-center sm:justify-end space-x-2 mb-4">
+      <div class="flex justify-center sm:justify-end space-x-3 mb-4">
         <MTag :icon="icons.git" />
       </div>
       <h6
-        class="mt-2 text-sm"
+        class="my-2 text-sm"
         v-text="$t('sidebar.ide')"
       />
-      <div class="flex justify-center sm:justify-end space-x-2 mb-4">
+      <div class="flex justify-center sm:justify-end space-x-3 mb-4">
         <MTag :icon="icons.vsc" />
         <MTag :icon="icons.photoshop" />
       </div>
       <h6
-        class="mt-2 text-sm"
+        class="my-2 text-sm"
         v-text="$t('sidebar.environments')"
       />
-      <div class="flex justify-center sm:justify-end space-x-2">
+      <div class="flex justify-center sm:justify-end space-x-3">
         <MTag :icon="icons.linux" />
         <MTag :icon="icons.mac" />
         <MTag :icon="icons.windows" />
