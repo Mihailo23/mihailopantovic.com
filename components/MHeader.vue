@@ -12,6 +12,8 @@
           key="image"
           src="/images/MihailoPantovic.jpg"
           alt="Mihailo Pantovic"
+          width="96"
+          height="96"
           class="animated image rounded-full border-black border-4 w-24 h-24"
         />
         <ul
