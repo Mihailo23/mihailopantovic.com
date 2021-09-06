@@ -1,4 +1,40 @@
-{
+export const PROJECTS = {
+    // "dev9t": {
+    //     "title": "projects.dev9t.title",
+    //     "url": "http://dev9t.com",
+    //     "tags": ["js", "vue", "html", "css", "sass"]
+    // },
+
+    "milica-pantovic": {
+        "title": "projects.milica-pantovic.title",
+        "url": "https://milicapantovic.com",
+        "tags": ["wordpress", "php", "jquery", "html", "css", "sass"]
+    },
+
+    "branko-pesic": {
+        "title": "projects.branko-pesic.title",
+        "url": "https://osbrankopesic.edu.rs",
+        "tags": ["wordpress", "php", "jquery", "html", "css", "sass"]
+    },
+
+    "asteria-led": {
+        "title": "projects.asteria-led.title",
+        "url": "http://asteria-led.com",
+        "tags": ["wordpress", "php", "jquery", "html", "css", "sass"]
+    },
+    "asteria-adventures": {
+        "title": "projects.asteria-adventures.title",
+        "url": "https://asteria-adventures.com",
+        "tags": ["wordpress", "php"]
+    },
+    "meridijan-sped": {
+        "title": "projects.meridijan-sped.title",
+        "url": "https://meridijansped.com/",
+        "tags": ["wordpress", "php", "html", "css", "sass"]
+    }
+}
+
+export const ICONS = {
     "js": {
         "icon": "javascript",
         "title": "JavaScript",

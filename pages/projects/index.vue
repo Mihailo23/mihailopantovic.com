@@ -7,7 +7,7 @@
       <div class="w-full sm:w-2/3 px-2">
         <main>
           <div
-            v-for="(project, name) in projects"
+            v-for="(project, name) in PROJECTS"
             :key="name"
             class="mb-8"
           >
@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import projects from "~/assets/projects.json";
+import { PROJECTS } from "~/assets/constants";
 
 import MSidebar from "~/components/MSidebar.vue";
 import MProject from "~/components/UI/MProject.vue";
@@ -40,7 +40,7 @@ export default {
   },
   data() {
     return {
-      projects
+      PROJECTS
     };
   }
 };

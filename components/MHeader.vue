@@ -38,7 +38,7 @@
           class="flex text-white animated projects"
         >
           <ProjectBubble
-            v-for="(project, name) in projects"
+            v-for="(project, name) in PROJECTS"
             :key="name"
             :project="name"
           />
@@ -49,7 +49,7 @@
 </template>
 <script>
 import { mapState } from "vuex";
-import projects from "~/assets/projects.json";
+import { PROJECTS } from "~/assets/constants";
 
 import NavigationList from "~/components/navigation/NavigationList.vue";
 import ProjectBubble from "~/components/UI/ProjectBubble.vue";
@@ -66,7 +66,7 @@ export default {
 
   data() {
     return {
-      projects
+      PROJECTS
     };
   },
 

@@ -20,7 +20,7 @@
       <MTag
         v-for="tag in tags"
         :key="tag"
-        :icon="icons[tag]"
+        :icon="ICONS[tag]"
       />
     </div>
     <slot></slot>
@@ -29,7 +29,7 @@
 
 <script>
 import MTag from "./MTag";
-import icons from "~/assets/icons.json";
+import { ICONS } from "~/assets/constants";
 export default {
   components: {
     MTag
@@ -50,7 +50,7 @@ export default {
   },
   data() {
     return {
-      icons
+      ICONS
     };
   }
 };
