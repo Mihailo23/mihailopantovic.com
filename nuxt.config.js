@@ -13,7 +13,7 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: process.env.npm_package_description || ""
+        content: "Mihailo Pantovic, Front-End Developer Personal Website. VueJS, JavaScript, CSS, HTML"
       },
       {
         name: "og:type",
@@ -29,7 +29,7 @@ export default {
       },
       {
         name: "og:description",
-        content: process.env.npm_package_description || ""
+        content: "Mihailo Pantovic, Front-End Developer Personal Website. VueJS, JavaScript, CSS, HTML"
       },
       {
         name: "og:image",
