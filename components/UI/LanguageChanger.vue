@@ -3,7 +3,7 @@
     <a
       class="lang absolute outline-none uppercase font-bold z-20 w-6 h-6 text-gray-800 border-black border-2 rounded-full flex items-center justify-center"
       :class="active && 'active'"
-      href=""
+      href="#"
       title="Change Language"
       @click.prevent="active = !active"
       v-text="$i18n.locale"
@@ -12,7 +12,7 @@
       v-if="$i18n.locale !== 'en'"
       class="lang absolute invisible outline-none uppercase font-bold z-10 w-6 h-6 text-gray-800 border-black border-2 rounded-full flex items-center justify-center"
       :class="active && 'moving'"
-      href=""
+      href="#"
       title="EN"
       @click.prevent="setLocale('en')"
     >
@@ -22,7 +22,7 @@
       v-if="$i18n.locale !== 'rs'"
       class="lang absolute invisible outline-none uppercase font-bold z-10 w-6 h-6 text-gray-800 border-black border-2 rounded-full flex items-center justify-center"
       :class="active && 'moving'"
-      href=""
+      href="#"
       title="RS"
       @click.prevent="setLocale('rs')"
     >
