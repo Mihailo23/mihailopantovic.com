@@ -1,10 +1,8 @@
 <template>
   <div class="container pt-24">
-    <div v-if="isGazeRecorderApiLoaded">
-      <button @click="startTracking">Start tracking</button>
-      <button @click="stopTracking">Stop tracking</button>
-      <button @click="replay" v-if="SesionReplayData">replay</button>
-    </div>
+    <button @click="startTracking">Start tracking</button>
+    <button @click="stopTracking">Stop tracking</button>
+    <button @click="replay" v-if="SesionReplayData">replay</button>
   </div>
 </template>
 <script>
