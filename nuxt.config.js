@@ -65,6 +65,9 @@ export default {
         href: "https://fonts.googleapis.com/css?family=Roboto&display=swap",
         onLoad: "this.onload=null;this.rel='stylesheet'"
       },
+    ],
+    script: [
+      { hid: 'gaze', src: 'https://api.gazerecorder.com/GazeCloudAPI.js', defer: true }
     ]
   },
   /*
