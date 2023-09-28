@@ -28,8 +28,6 @@ export default {
           hid: 'gaze-replay',
           src: 'https://app.gazerecorder.com/GazePlayer.js',
           defer: true,
-          // Changed after script load
-          callback: () => { this.isGazeRecorderApiLoaded = true } 
         }
       ]
     }
