@@ -20,14 +20,12 @@ export default {
       {
           hid: 'gaze-recorder',
           src: 'https://app.gazerecorder.com/GazeRecorderAPI.js',
-          defer: true,
           // Changed after script load
           callback: () => { this.isGazeRecorderApiLoaded = true } 
         },
         {
           hid: 'gaze-replay',
           src: 'https://app.gazerecorder.com/GazePlayer.js',
-          defer: true,
         }
       ]
     }
