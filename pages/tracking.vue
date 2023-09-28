@@ -1,7 +1,8 @@
 <template>
   <div class="container pt-24">
-    <div v-if="isGazeCloudApiLoaded">
+    <div v-if="isGazeRecorderApiLoaded">
       <button @click="stopTracking">stop tracking</button>
+      <button @click="replay" v-if="SesionReplayData">replay</button>
     </div>
   </div>
 </template>
@@ -9,31 +10,44 @@
 export default {
   data() {
     return {
-      isGazeCloudApiLoaded: false
+      isGazeRecorderApiLoaded: false,
+      SesionReplayData: null
     }
   },
   head () {
     return {
       script: [
-        {
-          hid: 'gaze',
-          src: 'https://api.gazerecorder.com/GazeCloudAPI.js',
+      {
+          hid: 'gaze-recorder',
+          src: 'https://app.gazerecorder.com/GazeRecorderAPI.js',
           defer: true,
           // Changed after script load
-          callback: () => { this.isGazeCloudApiLoaded = true } 
+          callback: () => { this.isGazeRecorderApiLoaded = true } 
+        },
+        {
+          hid: 'gaze-replay',
+          src: 'https://app.gazerecorder.com/GazePlayer.js',
+          defer: true,
+          // Changed after script load
+          callback: () => { this.isGazeRecorderApiLoaded = true } 
         }
       ]
     }
   },
   methods: {
     stopTracking() {
-      window.GazeCloudAPI.StopEyeTracking()
+      window.GazeRecorderAPI.Rec()
+      this.SesionReplayData = window.GazeRecorderAPI.GetRecData();
+    },
+    replay() {
+      window.GazePlayer.PlayResultsData(this.SesionReplayData );
+
     }
   },
   watch: {
-    isGazeCloudApiLoaded(value) {
+    isGazeRecorderApiLoaded(value) {
       if(value) {
-        window.GazeCloudAPI.StartEyeTracking();
+        window.GazeRecorderAPI.StopRec();
       }
     }
   }

@@ -66,9 +66,6 @@ export default {
         onLoad: "this.onload=null;this.rel='stylesheet'"
       },
     ],
-    script: [
-      { hid: 'gaze', src: 'https://api.gazerecorder.com/GazeCloudAPI.js', defer: true }
-    ]
   },
   /*
    ** Customize the progress-bar color
