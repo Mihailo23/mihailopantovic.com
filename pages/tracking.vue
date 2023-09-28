@@ -1,4 +1,8 @@
-
+<template>
+  <div v-if="isGazeCloudApiLoaded">
+    <button @click="stopTracking">stop tracking</button>
+  </div>
+</template>
 <script>
 export default {
   data() {
@@ -11,12 +15,17 @@ export default {
       script: [
         {
           hid: 'gaze',
-          src: '<https://api.gazerecorder.com/GazeCloudAPI.js>',
+          src: 'https://api.gazerecorder.com/GazeCloudAPI.js',
           defer: true,
           // Changed after script load
           callback: () => { this.isGazeCloudApiLoaded = true } 
         }
       ]
+    }
+  },
+  methods: {
+    stopTracking() {
+      window.GazeCloudAPI.StopEyeTracking()
     }
   },
   watch: {
