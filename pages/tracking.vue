@@ -1,6 +1,8 @@
 <template>
-  <div v-if="isGazeCloudApiLoaded">
-    <button @click="stopTracking">stop tracking</button>
+  <div class="container pt-24">
+    <div v-if="isGazeCloudApiLoaded">
+      <button @click="stopTracking">stop tracking</button>
+    </div>
   </div>
 </template>
 <script>
