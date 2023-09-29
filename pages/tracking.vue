@@ -65,7 +65,9 @@ export default {
     isGazeCloudApiLoaded(value) {
       if(value) {
         window.GazeCloudAPI.StartEyeTracking();
-        window.GazeCloudAPI.OnResult = this.plotGaze;
+        window.GazeCloudAPI.OnResult = (gazeData) => {
+          this.plotGaze(gazeData);
+        }
       }
     }
   }
