@@ -1,5 +1,5 @@
 <template>
-  <div class="container pt-40">
+  <div>
     <div v-if="isGazeCloudApiLoaded">
       <button @click="stopTracking">stop tracking</button>
     </div>
@@ -20,6 +20,7 @@
 </template>
 <script>
 export default {
+  layout: 'klot',
   data() {
     return {
       isGazeCloudApiLoaded: false
