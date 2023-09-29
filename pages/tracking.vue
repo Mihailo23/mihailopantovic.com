@@ -4,7 +4,17 @@
       <button @click="stopTracking">stop tracking</button>
     </div>
     <div id="gaze"
-        style='position: absolute;display:none;width: 100px;height: 100px;border-radius: 50%;border: solid 2px  rgba(255, 255,255, .2);	box-shadow: 0 0 100px 3px rgba(125, 125,125, .5);	pointer-events: none;	z-index: 999999'>
+      style="
+        position: absolute;
+        display:none;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: solid 2px  rgba(255, 255,255, .2);
+        box-shadow: 0 0 100px 3px rgba(125, 125,125, .5);
+        pointer-events: none;	z-index: 999999
+      "
+    >
     </div>
   </div>
 </template>
@@ -33,6 +43,7 @@ export default {
       window.GazeCloudAPI.StopEyeTracking()
     },
     plotGaze(GazeData) {
+      console.log(GazeData);
       /*
           GazeData.state // 0: valid gaze data; -1 : face tracking lost, 1 : gaze uncalibrated
           GazeData.docX // gaze x in document coordinates
