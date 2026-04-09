@@ -7,7 +7,7 @@ const { t } = useI18n({ useScope: "global" });
 
 <template>
   <section class="hero">
-    <div class="hero-svg">
+    <div class="hero-svg" role="img" :aria-label="t('aria.heroSvg')">
       <HeroSvg />
     </div>
     <div class="hero-text">
