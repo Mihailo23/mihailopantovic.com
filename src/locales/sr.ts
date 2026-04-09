@@ -24,19 +24,19 @@ export default {
       desc: "Marketing automatizacija za finansijske savetnike",
     },
     helbiz: {
-      role: "Vodeći Front-End Web Developer",
+      role: "Vodeći Frontend Developer",
       company: "Helbiz",
       date: "Okt 2019 – Feb 2023",
       desc: "Mikromobilnost startup",
     },
     yamba: {
-      role: "Vodeći Front-End Web Developer",
+      role: "Vodeći Frontend Developer",
       company: "YAMBA S.a.r.l., Luksemburg",
       date: "Dec 2016 – Okt 2019",
       desc: "Startup društvene mreže",
     },
     presta: {
-      role: "Front-End Web Developer",
+      role: "Frontend Developer",
       company: "Presta D.O.O., Beograd",
       date: "Sep 2013 – Dec 2016",
       desc: "Rad u timu od 15 ljudi, uglavnom front-end i WordPress integracija",
@@ -74,5 +74,8 @@ export default {
   },
   footer: {
     copy: "© {year} Mihailo Pantović",
+  },
+  aria: {
+    heroSvg: "Ilustracija programera",
   },
 };
