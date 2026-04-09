@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0f1a;
+  color: #c8d6e5;
+  font-family: "Raleway", sans-serif;
+}
+
+#app {
+  min-height: 100vh;
+}
