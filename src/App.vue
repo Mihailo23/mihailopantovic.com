@@ -25,7 +25,17 @@ useHead({
         "Personal portfolio of Mihailo Pantovic, Full Stack Developer. Vue.js, TypeScript, React, and modern web technologies.",
     },
     { property: "og:url", content: "https://mihailopantovic.com" },
-    { name: "twitter:card", content: "summary" },
+    { property: "og:image", content: "https://mihailopantovic.com/og-image.png" },
+    { property: "og:image:width", content: "1200" },
+    { property: "og:image:height", content: "630" },
+    { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:title", content: "Mihailo Pantovic — Full Stack Developer" },
+    {
+      name: "twitter:description",
+      content:
+        "Personal portfolio of Mihailo Pantovic, Full Stack Developer. Vue.js, TypeScript, React, and modern web technologies.",
+    },
+    { name: "twitter:image", content: "https://mihailopantovic.com/og-image.png" },
     { name: "robots", content: "index, follow" },
   ],
   link: [{ rel: "canonical", href: "https://mihailopantovic.com" }],
