@@ -18,7 +18,7 @@ export default {
   },
   experience: {
     snappy: {
-      role: "Vodeći Frontend Developer",
+      role: "Vodeći Frontend / Full Stack Developer",
       company: "Snappy Kraken",
       date: "Feb 2023 – Danas",
       desc: [
