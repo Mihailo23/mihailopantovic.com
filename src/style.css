@@ -1,15 +1,96 @@
-* {
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+:root {
+  /* Background */
+  --color-bg: #0a0f1a;
+  --color-bg-card: rgba(65, 197, 231, 0.03);
+
+  /* Text */
+  --color-heading: #f0f0f0;
+  --color-body: #c8d6e5;
+  --color-secondary: #8899aa;
+  --color-muted: #667788;
+  --color-faint: #4a6070;
+
+  /* Accent */
+  --color-accent-start: #41c5e7;
+  --color-accent-end: #7affc4;
+  --color-tag-bg: rgba(65, 197, 231, 0.08);
+  --color-tag-border: rgba(65, 197, 231, 0.15);
+  --color-tag-text: #7affc4;
+
+  /* Borders */
+  --color-border: rgba(65, 197, 231, 0.08);
+  --color-border-card: rgba(65, 197, 231, 0.1);
+  --color-border-card-hover: rgba(122, 255, 196, 0.3);
+  --color-border-nav: rgba(65, 197, 231, 0.1);
+
+  /* Typography */
+  --font-body: "Raleway", "Helvetica Neue", Helvetica, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+
+  /* Layout */
+  --max-width: 800px;
+  --nav-height: 60px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--nav-height) + 24px);
 }
 
 body {
-  background: #0a0f1a;
-  color: #c8d6e5;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--color-body);
+  background: var(--color-bg);
+  line-height: 1.7;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-#app {
-  min-height: 100vh;
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  color: var(--color-heading);
+  line-height: 1.3;
+}
+
+a {
+  color: var(--color-tag-text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-accent-start);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
 }
