@@ -18,7 +18,7 @@
   --color-body: #c8d6e5;
   --color-secondary: #8899aa;
   --color-muted: #667788;
-  --color-faint: #4a6070;
+  --color-faint: #6a8898;
 
   /* Accent */
   --color-accent-start: #41c5e7;
@@ -87,6 +87,11 @@ img {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 32px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent-start);
+  outline-offset: 2px;
 }
 
 @media (max-width: 768px) {
