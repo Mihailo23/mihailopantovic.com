@@ -10,19 +10,19 @@ import ContactSection from "./components/ContactSection.vue";
 import FooterSection from "./components/FooterSection.vue";
 
 useHead({
-  title: "Mihailo Pantovic — Lead Frontend Developer",
+  title: "Mihailo Pantovic — Software Developer",
   meta: [
     {
       name: "description",
       content:
-        "Personal portfolio of Mihailo Pantovic, Lead Frontend Developer. Vue.js, TypeScript, React, and modern web technologies.",
+        "Personal portfolio of Mihailo Pantovic, Software Developer. Vue.js, TypeScript, React, and modern web technologies.",
     },
     { property: "og:type", content: "website" },
-    { property: "og:title", content: "Mihailo Pantovic — Lead Frontend Developer" },
+    { property: "og:title", content: "Mihailo Pantovic — Software Developer" },
     {
       property: "og:description",
       content:
-        "Personal portfolio of Mihailo Pantovic, Lead Frontend Developer. Vue.js, TypeScript, React, and modern web technologies.",
+        "Personal portfolio of Mihailo Pantovic, Software Developer. Vue.js, TypeScript, React, and modern web technologies.",
     },
     { property: "og:url", content: "https://mihailopantovic.com" },
     { name: "twitter:card", content: "summary" },
