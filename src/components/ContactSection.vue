@@ -6,7 +6,7 @@ const { t } = useI18n({ useScope: "global" });
 
 <template>
   <section id="contact">
-    <div class="section-title">{{ t("section.contact") }}</div>
+    <h2 class="section-title">{{ t("section.contact") }}</h2>
     <div class="contact-links">
       <a class="contact-link" href="mailto:pantovic.mihailo@gmail.com">
         <span class="label">{{ t("contact.email") }}</span>
@@ -47,7 +47,7 @@ section {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--color-accent-start);
-  margin-bottom: 32px;
+  margin: 0 0 32px;
 }
 
 .contact-links {

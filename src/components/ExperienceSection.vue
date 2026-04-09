@@ -8,7 +8,7 @@ const jobs = ["snappy", "helbiz", "yamba", "presta"] as const;
 
 <template>
   <section id="experience">
-    <div class="section-title">{{ t("section.experience") }}</div>
+    <h2 class="section-title">{{ t("section.experience") }}</h2>
     <div class="timeline">
       <div v-for="job in jobs" :key="job" class="timeline-item">
         <div class="timeline-line">
@@ -38,7 +38,7 @@ section {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--color-accent-start);
-  margin-bottom: 32px;
+  margin: 0 0 32px;
 }
 
 .timeline-item {

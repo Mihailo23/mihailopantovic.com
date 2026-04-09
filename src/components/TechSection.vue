@@ -27,7 +27,7 @@ const categories = [
 
 <template>
   <section id="tech">
-    <div class="section-title">{{ t("section.tech") }}</div>
+    <h2 class="section-title">{{ t("section.tech") }}</h2>
     <div v-for="cat in categories" :key="cat.key" class="category">
       <div class="category-title">{{ t(`tech.${cat.key}`) }}</div>
       <div class="tags">
@@ -52,7 +52,7 @@ section {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--color-accent-start);
-  margin-bottom: 32px;
+  margin: 0 0 32px;
 }
 
 .category {

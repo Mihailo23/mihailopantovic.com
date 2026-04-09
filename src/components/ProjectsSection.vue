@@ -12,7 +12,7 @@ const projects = [
 
 <template>
   <section id="projects">
-    <div class="section-title">{{ t("section.projects") }}</div>
+    <h2 class="section-title">{{ t("section.projects") }}</h2>
     <div class="projects-grid">
       <a
         v-for="project in projects"
@@ -45,7 +45,7 @@ section {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--color-accent-start);
-  margin-bottom: 32px;
+  margin: 0 0 32px;
 }
 
 .projects-grid {

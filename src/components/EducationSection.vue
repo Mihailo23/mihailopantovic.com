@@ -6,7 +6,7 @@ const { t } = useI18n({ useScope: "global" });
 
 <template>
   <section id="education">
-    <div class="section-title">{{ t("section.education") }}</div>
+    <h2 class="section-title">{{ t("section.education") }}</h2>
     <div class="edu-item">
       <h3>{{ t("education.institution") }}</h3>
       <div class="degree">{{ t("education.degree") }}</div>
@@ -28,7 +28,7 @@ section {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--color-accent-start);
-  margin-bottom: 32px;
+  margin: 0 0 32px;
 }
 
 .edu-item h3 {
