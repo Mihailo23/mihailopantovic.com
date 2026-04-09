@@ -4,6 +4,7 @@ import { useI18n } from "vue-i18n";
 
 const { t, locale } = useI18n({ useScope: "global" });
 const scrolled = ref(false);
+const menuOpen = ref(false);
 
 function onScroll() {
   scrolled.value = window.scrollY > 20;
@@ -16,8 +17,25 @@ function toggleLocale() {
   document.documentElement.setAttribute("lang", next);
 }
 
-onMounted(() => window.addEventListener("scroll", onScroll));
-onUnmounted(() => window.removeEventListener("scroll", onScroll));
+function navigateTo() {
+  menuOpen.value = false;
+}
+
+function onKeydown(e: KeyboardEvent) {
+  if (e.key === "Escape" && menuOpen.value) {
+    menuOpen.value = false;
+  }
+}
+
+onMounted(() => {
+  window.addEventListener("scroll", onScroll);
+  window.addEventListener("keydown", onKeydown);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", onScroll);
+  window.removeEventListener("keydown", onKeydown);
+});
 </script>
 
 <template>
@@ -35,6 +53,25 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
           <span :class="{ active: locale === 'sr' }">SR</span>
         </button>
       </div>
+      <button
+        class="hamburger"
+        :aria-label="menuOpen ? 'Close menu' : 'Open menu'"
+        :aria-expanded="menuOpen"
+        @click="menuOpen = !menuOpen"
+      >
+        <span class="bar" :class="{ open: menuOpen }" />
+      </button>
+    </div>
+    <div class="mobile-menu" :class="{ open: menuOpen }">
+      <a href="#experience" @click="navigateTo">{{ t("nav.experience") }}</a>
+      <a href="#tech" @click="navigateTo">{{ t("nav.tech") }}</a>
+      <a href="#projects" @click="navigateTo">{{ t("nav.projects") }}</a>
+      <a href="#contact" @click="navigateTo">{{ t("nav.contact") }}</a>
+      <button class="lang-toggle" @click="toggleLocale">
+        <span :class="{ active: locale === 'en' }">EN</span>
+        /
+        <span :class="{ active: locale === 'sr' }">SR</span>
+      </button>
     </div>
   </nav>
 </template>
@@ -111,18 +148,107 @@ nav.scrolled {
   color: var(--color-tag-text);
 }
 
+/* Hamburger button — hidden on desktop */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  width: 32px;
+  height: 32px;
+  position: relative;
+}
+
+.bar,
+.bar::before,
+.bar::after {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--color-heading);
+  border-radius: 1px;
+  transition: all 0.3s ease;
+  position: absolute;
+  left: 6px;
+}
+
+.bar {
+  top: 15px;
+}
+
+.bar::before {
+  content: "";
+  top: -6px;
+}
+
+.bar::after {
+  content: "";
+  top: 6px;
+}
+
+.bar.open {
+  background: transparent;
+}
+
+.bar.open::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.bar.open::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+/* Mobile menu — hidden on desktop */
+.mobile-menu {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .nav-inner {
     padding: 12px 20px;
   }
 
   .links {
-    gap: 12px;
+    display: none;
   }
 
-  .links a {
-    font-size: 10px;
-    letter-spacing: 0.5px;
+  .hamburger {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    border-top: 1px solid transparent;
+  }
+
+  .mobile-menu.open {
+    max-height: 300px;
+    padding: 24px 20px;
+    border-top-color: var(--color-border-nav);
+  }
+
+  .mobile-menu a {
+    color: var(--color-secondary);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .mobile-menu a:hover {
+    color: var(--color-tag-text);
   }
 }
 </style>
