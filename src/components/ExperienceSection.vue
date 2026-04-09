@@ -35,7 +35,10 @@ const jobs = [
           <h3>{{ t(`experience.${job.key}.role`) }}</h3>
           <div class="company">{{ t(`experience.${job.key}.company`) }}</div>
           <div class="date">{{ t(`experience.${job.key}.date`) }}</div>
-          <div class="desc">{{ t(`experience.${job.key}.desc`) }}</div>
+          <ul v-if="Array.isArray(t(`experience.${job.key}.desc`))" class="desc-list">
+            <li v-for="(item, i) in t(`experience.${job.key}.desc`)" :key="i">{{ item }}</li>
+          </ul>
+          <div v-else class="desc">{{ t(`experience.${job.key}.desc`) }}</div>
           <div class="tech-tags">
             <span v-for="tech in job.tech" :key="tech" class="tech-tag">
               {{ tech }}
@@ -117,6 +120,27 @@ section {
 .desc {
   font-size: 13px;
   color: var(--color-muted);
+}
+
+.desc-list {
+  font-size: 13px;
+  color: var(--color-muted);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.desc-list li {
+  position: relative;
+  padding-left: 14px;
+  margin-bottom: 4px;
+}
+
+.desc-list li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent-start);
 }
 
 .tech-tags {

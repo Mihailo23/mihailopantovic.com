@@ -21,7 +21,14 @@ export default {
       role: "Vodeći Frontend Developer",
       company: "Snappy Kraken",
       date: "Feb 2023 – Danas",
-      desc: "Objavio Vue 3 aplikaciju nakon 3+ godine razvoja. Ujednačio frontend alate u timu, migrirao na Vite+. Napravio dodatnu klijentsku aplikaciju. Održavam i razvijam set internih biblioteka. Uključen i u backend rad sa Laravel-om i rešavanje korisničkih problema.",
+      desc: [
+        "Objavio Vue 3 aplikaciju nakon 3+ godine razvoja",
+        "Ujednačio frontend alate u timu, migrirao na Vite+",
+        "Napravio dodatnu klijentsku aplikaciju korišćenu od svih klijenata",
+        "Održavam i razvijam set internih biblioteka",
+        "Uključen u backend rad sa Laravel-om",
+        "Rešavanje korisničkih problema",
+      ],
     },
     helbiz: {
       role: "Vodeći Frontend Developer",

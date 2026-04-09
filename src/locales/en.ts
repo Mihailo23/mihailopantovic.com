@@ -21,7 +21,14 @@ export default {
       role: "Lead Frontend Developer",
       company: "Snappy Kraken",
       date: "Feb 2023 – Present",
-      desc: "Released a Vue 3 application after 3+ years of development. Unified frontend tooling across the team, migrated to Vite+. Built an additional client-facing app. Maintaining and developing a set of internal libraries. Also involved in backend work with Laravel and handling customer support issues.",
+      desc: [
+        "Released a Vue 3 application after 3+ years of development",
+        "Unified frontend tooling across the team, migrated to Vite+",
+        "Built an additional client-facing app used by all clients",
+        "Maintaining and developing a set of internal libraries",
+        "Involved in backend work with Laravel",
+        "Handling customer support issues",
+      ],
     },
     helbiz: {
       role: "Lead Frontend Developer",
