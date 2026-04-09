@@ -7,7 +7,7 @@ export default {
   },
   hero: {
     name: "Mihailo Pantovic",
-    title: "Software Developer",
+    title: "Full Stack Developer",
   },
   section: {
     experience: "// Experience",

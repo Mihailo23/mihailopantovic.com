@@ -3,22 +3,44 @@ import { useI18n } from "vue-i18n";
 
 const { t } = useI18n({ useScope: "global" });
 
-const jobs = ["snappy", "helbiz", "yamba", "presta"] as const;
+const jobs = [
+  {
+    key: "snappy",
+    tech: ["Vue.js", "TypeScript", "Tailwind CSS", "Sass", "Laravel"],
+  },
+  {
+    key: "helbiz",
+    tech: ["Vue.js", "React", "React Native", "TypeScript", "Nuxt", "Tailwind CSS", "Sass"],
+  },
+  {
+    key: "yamba",
+    tech: ["Vue.js", "JavaScript", "Tailwind CSS", "Sass", "Bootstrap"],
+  },
+  {
+    key: "presta",
+    tech: ["WordPress", "PHP", "jQuery", "HTML", "CSS", "Sass"],
+  },
+] as const;
 </script>
 
 <template>
   <section id="experience">
     <h2 class="section-title">{{ t("section.experience") }}</h2>
     <div class="timeline">
-      <div v-for="job in jobs" :key="job" class="timeline-item">
+      <div v-for="job in jobs" :key="job.key" class="timeline-item">
         <div class="timeline-line">
           <div class="timeline-dot" />
         </div>
         <div class="timeline-content">
-          <h3>{{ t(`experience.${job}.role`) }}</h3>
-          <div class="company">{{ t(`experience.${job}.company`) }}</div>
-          <div class="date">{{ t(`experience.${job}.date`) }}</div>
-          <div class="desc">{{ t(`experience.${job}.desc`) }}</div>
+          <h3>{{ t(`experience.${job.key}.role`) }}</h3>
+          <div class="company">{{ t(`experience.${job.key}.company`) }}</div>
+          <div class="date">{{ t(`experience.${job.key}.date`) }}</div>
+          <div class="desc">{{ t(`experience.${job.key}.desc`) }}</div>
+          <div class="tech-tags">
+            <span v-for="tech in job.tech" :key="tech" class="tech-tag">
+              {{ tech }}
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -95,5 +117,27 @@ section {
 .desc {
   font-size: 13px;
   color: var(--color-muted);
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.tech-tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  padding: 3px 10px;
+  background: var(--color-tag-bg);
+  color: var(--color-tag-text);
+  border-radius: 16px;
+  border: 1px solid var(--color-tag-border);
+  transition: border-color 0.2s ease;
+}
+
+.tech-tag:hover {
+  border-color: var(--color-border-card-hover);
 }
 </style>
