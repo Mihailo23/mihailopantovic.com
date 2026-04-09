@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 import { createI18n } from "vue-i18n";
-import { createHead } from "@unhead/vue";
+import { createHead } from "@unhead/vue/client";
 import "./style.css";
 import App from "./App.vue";
 import en from "./locales/en";
